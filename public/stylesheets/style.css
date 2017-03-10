@@ -109,22 +109,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /*-------------------- Home --------------------------- */
 
-.jumbotron {
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-    position: relative;
-    height: 55em;
+.jumbotron.jumbotron-fluid{
     width: 100%;
-    background-position: 0% 25%;
-    background-image: url('../images/jim_camera.jpg');
-    -webkit-filter: opacity(100%);
+    height: 75vh;
+    position:relative;
     z-index: -1;
-    background-repeat:no-repeat;
-    
-    content: "";
-    display:block;
-    margin-top: 45px;
+    overflow:hidden;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-image: url(/images/jim_camera.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    border-radius: 0px;
 }
 
 /*-------------------- Tiles --------------------------- */
