@@ -1,0 +1,49 @@
+extends layout
+
+block content
+#recentwork
+  a#recent.smooth
+  .container
+    .page-header
+      h1 RECENT  WORK
+    .album.text-muted
+      .container
+        .row
+          .col-xs-6.col-lg-4.card
+            .video-container
+              iframe(src='https://www.youtube.com/embed/HTO55LIzky8', frameborder='0', allowfullscreen='', style='height: 100%; width: 100%; display: block;')
+            .video-text
+              h3 A Day with My Boy: Slug War
+              h4 2014, Super 8mm & HD, 4 mins.
+          // /span
+          .col-xs-6.col-lg-4.card
+            .video-container
+              iframe(src='http://vimeo.com/moogaloop.swf?clip_id=63921781&force_embed=1&server=vimeo.com&show_title=0&show_byline=0&show_portrait=0&color=ffffff&fullscreen=1&autoplay=0&loop=0', frameborder='0', allowfullscreen='', style='height: 100%; width: 100%; display: block;')
+            .video-text
+              h3 Angels
+              h4 2013, HD, 6 mins.
+          // /span
+          .col-xs-6.col-lg-4.card
+            .hovereffect
+              img.img.img-responsive(src='http://res.cloudinary.com/dmcdekker/image/upload/v1471463440/Denise%20Website/listen_typo_dxdlrg.jpg', alt='sisterweb', data-holder-rendered='true', style='height: 95%; width: 95%; display: block;')
+              .overlay
+                h2
+                  a(href='/work/typography') Typography >
+                p letterpress
+          // /span
+          .col-xs-6.col-lg-4.card
+            .hovereffect
+              img.img.img-responsive(src='http://res.cloudinary.com/dmcdekker/image/upload/v1471463653/Denise%20Website/cloropleth_rmgzct.png', alt='sisterweb', data-holder-rendered='true', style='height: 95%; width: 95%; display: block;')
+              .overlay
+                h2
+                  a(href='/work/maps') Maps >
+                p data visualization
+          // /span
+          .col-xs-6.col-lg-4.card
+            .hovereffect
+              img.img.img-responsive(src='http://res.cloudinary.com/dmcdekker/image/upload/c_scale,h_432,w_648/v1475466341/Denise%20Website/Screen_Shot_2016-10-02_at_8.42.55_PM_yklb4q.png', alt='sisterweb', data-holder-rendered='true', style='height: 95%; width: 95%; display: block;')
+              .overlay
+                h2
+                  a(href='/work/dmdekker') dmdekker.io>
+                p website design
+          // /span
