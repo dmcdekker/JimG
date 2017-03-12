@@ -4,23 +4,27 @@ block content
   .container
    .row
     .page-header
-      h3 Typography
+      h3 Recent Work
       .row
-        .col-lg-4.col-sm-6
+       .col-lg-12
+        .col-lg-4.col-sm-4
           a(href='#gallery', data-slide-to='0')
-            img.thumbnail.img-responsive(width='560', height='315', src='./images/slug.jpg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-6
+            img.thumbnail.img-responsive(src='./images/slug.jpg', data-toggle='modal', data-target='#myModal')
+        .col-lg-4.col-sm-4
           a(href='#gallery', data-slide-to='1')
-            img.thumbnail.img-responsive(width='560', height='315', src='./images/angels.jpg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-6
+            img.thumbnail.img-responsive(src='./images/angels.jpg', data-toggle='modal', data-target='#myModal')
+        .col-lg-4.col-sm-4
           a(href='#gallery', data-slide-to='2')
-            img.thumbnail.img-responsive(width='560', height='315', src='http://res.cloudinary.com/dmcdekker/image/upload/v1471463622/Denise%20Website/mistake_m46qkb.jpg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-6
+            img.thumbnail.img-responsive(src='./images/so_long.jpeg', data-toggle='modal', data-target='#myModal')
+        .col-lg-4.col-sm-4
           a(href='#gallery', data-slide-to='3')
-            img.thumbnail.img-responsive(width='560', height='315', src='http://res.cloudinary.com/dmcdekker/image/upload/c_scale,h_435,w_648/v1471463622/Denise%20Website/experiment_uxk08m.jpg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-6
+            img.thumbnail.img-responsive(src='./images/dream.jpeg', data-toggle='modal', data-target='#myModal')
+        .col-lg-4.col-sm-4
           a(href='#gallery', data-slide-to='4')
-            img.thumbnail.img-responsive(width='560', height='315', src='http://res.cloudinary.com/dmcdekker/image/upload/c_scale,h_435,w_648/v1471463621/Denise%20Website/listen2_ew4u7f.jpg', data-toggle='modal', data-target='#myModal')
+            img.thumbnail.img-responsive(src='./images/designated_routes.jpeg', data-toggle='modal', data-target='#myModal')
+        .col-lg-4.col-sm-4
+          a(href='#gallery', data-slide-to='5')
+            img.thumbnail.img-responsive(src='./images/urban.jpg', data-toggle='modal', data-target='#myModal')    
       
       #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
         .modal-dialog(role='document')
@@ -28,15 +32,18 @@ block content
             #gallery.carousel.slide(data-interval='false')
               .carousel-inner
                 .item.active
-                  iframe(width='560', height='315', src='https://www.youtube.com/embed/HTO55LIzky8', frameborder='0', allowfullscreen='', alt='item1')
+                  iframe(src='https://www.youtube.com/embed/HTO55LIzky8', width='640', height='480', frameborder='0', allowfullscreen='', alt='item1')
                 .item
-                  iframe( width='660', height='360', src='https://player.vimeo.com/video/63921781', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item1')
+                  iframe(src='https://player.vimeo.com/video/63921781', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item2')
                 .item
-                  img(width='560', height='315', src='http://res.cloudinary.com/dmcdekker/image/upload/v1471463622/Denise%20Website/mistake_m46qkb.jpg', alt='item2')
+                  iframe(src='https://player.vimeo.com/video/146865203', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item3')
                 .item
-                  img(width='560', height='315', src='http://res.cloudinary.com/dmcdekker/image/upload/c_scale,h_435,w_648/v1471463622/Denise%20Website/experiment_uxk08m.jpg', alt='item3')
+                  iframe(src='https://player.vimeo.com/video/7842372', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item4')
                 .item
-                  img(width='560', height='315', src='http://res.cloudinary.com/dmcdekker/image/upload/c_scale,h_435,w_648/v1471463621/Denise%20Website/listen2_ew4u7f.jpg', alt='item4')
+                  iframe(src='https://player.vimeo.com/video/7789499', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item5')
+                .item
+                  iframe(src='https://player.vimeo.com/video/7831395', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item6')
+  
               
           a.left.carousel-control(href='#gallery', role='button', data-slide='prev')
             span.glyphicon.glyphicon-chevron-left

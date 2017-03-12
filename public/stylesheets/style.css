@@ -36,6 +36,11 @@ container{
     background-color: #262626;
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 0.8em;
@@ -171,6 +176,9 @@ h1, h2, h3, h4, h5, h6 {
     body {
         font-size: 1.1em;
     }
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: none; 
+}
 }
 
 /* md */
@@ -188,7 +196,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*-----------------work--------------------*/
+/*-----------------Portfolio--------------------*/
+.page-header {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
 
 .carousel-control.left,.carousel-control.right{
   background-image:none;
@@ -220,6 +237,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   margin-bottom: 0;
   padding: 0;
+  display: inline-block;
 }
 
 .modal-backdrop.in {
@@ -228,4 +246,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal.and.carousel {
   position: absolute; 
+}
+
+.col-lg-4.col-sm-4{
+    display: inline-block;
 }
