@@ -1,9 +1,5 @@
 /*----html, body, container-----*/
- *{
-   overflow: scroll;         
-   margin:0px;
-   padding:0px;
-}
+
 
 html{
   min-height: 100%;
@@ -35,6 +31,7 @@ container{
     max-width: 100% !important;
     background-color: #262626;
 }
+
 
 .h1, .h2, .h3, h1, h2, h3 {
     margin-top: 20px;
@@ -89,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------ Navbar------------------------- */
 
 .navbar.navbar-inverse.navbar-fixed-top{
+    display: inline;
     margin-bottom: 0;
 }
 
@@ -114,6 +112,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Futura", sans-serif;
     float: right;
     font-size: 16px;
+}
+
+a.navbar-brand{
+    
 }
 
 
