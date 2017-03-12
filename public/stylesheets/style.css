@@ -1,12 +1,12 @@
 /*----html, body, container-----*/
  *{
+   overflow: scroll;         
    margin:0px;
    padding:0px;
 }
 
 html{
   min-height: 100%;
-  background-color: #262626;
 }
 
 
@@ -21,22 +21,19 @@ html, body{
 body{
     min-height: 100vh;
     width: 100%; /* full window width */
-    overflow: hidden !important;
     margin-top: 0;
     padding-top: 0;
     font-size: 14px;
     line-height: 30px;
-    background-color: #262626;
 }
 
-.container{
+container{
     width: 100%;
     min-height: 100%;
     padding: 0;
     margin-top: 30px;
-    min-height: 100%;
     max-width: 100% !important;
-    overflow: hidden !important;
+    background-color: #262626;
 }
 
 @media screen and (max-width: 767px) {
@@ -144,49 +141,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0px;
 }
 
-/*-------------------- Tiles --------------------------- */
-
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 20px; height: 0; overflow: hidden;
-}
- 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-padding-top: 20px;    
-}
-
-.carousel-control.left,.carousel-control.right{
-  background-image:none;
-  
-}
-
-.carousel-control.left {margin-left: -100px; color: white;}
-.carousel-control.right {margin-right: -100px; color: white;}
-
-.btn{
-  padding: 2px 5px;
-  font-size: 14px;
-}
-
-
-
-.carousel-inner .item img{
-  margin-right: 0px;
-}
-
-.modal-backdrop.in {
-	opacity: 0.16 !important;
-}
-
-
 
 /*-------------------Footer ----------------------------*/
 
@@ -198,7 +152,7 @@ padding-top: 20px;
     background-color: #262626;
 }
 
-p#copyright{
+#copyright{
     margin: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -233,3 +187,45 @@ p#copyright{
     }
 }
 
+
+/*-----------------work--------------------*/
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  
+}
+
+.carousel-control.left {margin-left: -100px; color: white;}
+.carousel-control.right {margin-right: -100px; color: white;}
+
+.btn{
+  padding: 2px 5px;
+  font-size: 14px;
+}
+
+.gallery.carousel.slide{
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.modal-content{
+    height: 520px;
+    overflow: hidden !important;
+}
+
+.carousel-inner .item iframe{
+  width: 100%;
+  height: 520px;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.modal-backdrop.in {
+	opacity: 0.16 !important;
+}
+
+.modal.and.carousel {
+  position: absolute; 
+}
