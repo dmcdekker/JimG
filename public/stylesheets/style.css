@@ -7,7 +7,7 @@ html{
 
 
 html, body{
-  height: 100%;
+  height: 100vh;
   min-height: 100%;
   background-color: #262626;
   font-family: "Open Sans", sans-serif;
@@ -23,13 +23,17 @@ body{
     line-height: 30px;
 }
 
-container{
-    width: 100%;
+.container{
+    width: 80%;
     min-height: 100%;
     padding: 0;
-    margin-top: 30px;
-    max-width: 100% !important;
+    margin-top: 2em;
+   
     background-color: #262626;
+}
+
+.row{
+    margin-top: .5em;
 }
 
 
@@ -87,14 +91,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar.navbar-inverse.navbar-fixed-top{
     display: inline;
-    margin-bottom: 0;
+    background-color: #262626;
+    border-color: #262626;
 }
 
+
+
 .navbar-brand{
-    font-family: "Futura", sans-serif;
+    font-family: "Quicksand", sans-serif;
     margin-left: 30px;
-    font-size: 26px;
-    font-weight:500;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 #navbar.collapse.navbar-collapse{
@@ -109,13 +116,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav.navbar-nav{
-    font-family: "Futura", sans-serif;
+    font-family: "Quicksand", sans-serif;
     float: right;
-    font-size: 16px;
-}
-
-a.navbar-brand{
-    
+    font-size: .75em;
+    font-weight: bold;
 }
 
 
@@ -124,6 +128,16 @@ a.navbar-brand{
     body {
         font-size: 0.7em;
     }
+    .nav.navbar-nav{
+        font-size: 1.5em;
+    }
+    .navbar-brand{
+        font-size: 2em;
+    }
+    .card-title{
+        font-size: 0.4em;
+    }
+    
 }
 
 
@@ -195,14 +209,14 @@ a.navbar-brand{
 }
 
 
-/*-----------------Portfolio--------------------*/
+/*-----------------Films--------------------*/
 .page-header {
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 2em;
+    margin-bottom: 3em;
     text-align: center;
     color: #fff;
     letter-spacing: 2px;
-        padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -246,7 +260,38 @@ a.navbar-brand{
   position: absolute; 
 }
 
-.col-lg-4.col-sm-4{
+.col-lg-4.col-sm-6{
     display: inline-block;
+    margin-bottom: 1em;
     float: none;
 }
+
+.card{
+    padding-bottom: 0.2em;
+    border: 1px solid #fff;
+}
+
+.card-title{
+    font-size: 0.56em;
+    margin-bottom: .2em;
+}
+
+.img-responsive {
+  background-color: #262626;
+  border: none;
+  text-align: center;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+#collapsecontent{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+}
+
+.glyphicon{
+    font-style: normal;
+    font-size: inherit;
+}
+
