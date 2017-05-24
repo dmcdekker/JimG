@@ -7,7 +7,7 @@ block content
       h3 Films
       .row
         .card-deck 
-        .col-lg-4.col-sm-6
+        .col-lg-4.col-sm-6.col-xs-12
           .card
             a(href='#gallery', data-slide-to='0')
               img.img-responsive(src='./images/slug.jpg', data-toggle='modal', data-target='#myModal')
@@ -20,78 +20,111 @@ block content
                | Photographed, Edited, Written and Directed by Jim Granato
               
             
-                
-        .col-lg-4.col-sm-6
+        .col-lg-4.col-sm-6.col-xs-12
           .card
             a(href='#gallery', data-slide-to='1')
               img.img-responsive(src='./images/angels.jpg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Angels
-              p.card-text 
-              
-        .col-lg-4.col-sm-6
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent1')
+              #collapsecontent1.collapse
+               | An innocent man walks through San Francisco clueless to the fact that the Blue Angels are in town practicing their air show. 
+               | After several encounters with the mysterious roars from above and the city's more colorful characters, our hero snaps and runs amok, seeking shelter. 
+               | The movies are just around the corner! But, in our hero's case, he's on their corner.
+               
+        .col-lg-4.col-sm-6.col-xs-12
           .card
             a(href='#gallery', data-slide-to='2')
+              img.img-responsive(src='./images/west.jpg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title West Is San Francisco
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent2')
+              #collapsecontent2.collapse 
+                | A film collaboration (32 min) between six San Francisco filmmakers.  A frenetic fusion of night and day, movement and stasis, 
+                | work and play - an iconographic city rides the flux of boom and bust in the 21st century. 
+                | Co-Directed, Produced, Edited and photographed by Jim Granato
+
+              
+        .col-lg-4.col-sm-6.col-xs-12
+          .card
+            a(href='#gallery', data-slide-to='3')
               img.img-responsive(src='./images/so_long.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title So Long, Kodachrome
-              p.card-text
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent3')
+              #collapsecontent3.collapse
+                | A deal goes down in a shady motel room where our (anti-)hero gets more than he bargains for. 
+                | "So Long, Kodachrome" is an ode to super 8 and the beloved, now defunct, popular color film stock while paying homage to a famous 70’s American landmark film.
+                | Photographed, Edited, Written and Directed by Jim Granato
               
-        .col-lg-4.col-sm-6
+        .col-lg-4.col-sm-6.col-xs-12
           .card
-            a(href='#gallery', data-slide-to='3')
+            a(href='#gallery', data-slide-to='4')
               img.img-responsive(src='./images/dream.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Afternoon Dream
-              p.card-text 
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent4')
+              #collapsecontent4.collapse
+                | A woman falls asleep on a mountain top, descending into a dream that reconnects her with nature. Shot on Super 8 Kodachrome and Ektachrome 
+                | (later hand-processed), "Afternoon Dream" comes from a series of films which take on solitude, landscapes, and the passing of time with more 
+                | of an experimental and minimalist approach.
+                | Photographed, Edited and Directed by Jim Granato
               
-        .col-lg-4.col-sm-6
+        .col-lg-4.col-sm-6.col-xs-12
           .card
-            a(href='#gallery', data-slide-to='4')
+            a(href='#gallery', data-slide-to='5')
               img.img-responsive(src='./images/designated_routes.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Designated Routes
-              p.card-text 
-              
-        .col-lg-4.col-sm-6
-          .card
-            a(href='#gallery', data-slide-to='5')
-              img.img-responsive(src='./images/urban.jpg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title Urban Renewal 
-              p.card-text 
-              
-        .col-lg-4.col-sm-6
-          .card
-            a(href='#gallery', data-slide-to='6')
-              img.img-responsive(src='./images/urban.jpg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title Fags and a Pint 
-              p.card-text 
-        
-        .col-lg-4.col-sm-6
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent5')
+              #collapsecontent5.collapse
+                | An exploration of landscapes set to the natural rhythm of nature and time: From the beginnings of a road trip leaving a city to 
+                | a desert bed of mountains and sand. A transportation of another kind occurs as mist and the tides offer a distinct view. Back on the rails, 
+                | only a shadow knows its destination. Low level clouds help the earth cool. After an orbit has been complete the city from which we've leaped lies 
+                | awake waiting for our return.
+                | Live Music Score by Destiny Muhammed.
+                | Photographed, Edited and Directed by Jim Granato
+     
+      
+        .col-lg-4.col-sm-6.col-xs-12
           .card
             a(href='#gallery', data-slide-to='7')
               img.img-responsive(src='./images/skins.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Human Skins
-              p.card-text    
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent6')
+              #collapsecontent6.collapse
+                | In October, 2003 I got together with several friends to participate in the 48 hour film project. At that time it was a fairly new idea that 
+                | pushed filmmakers to write, shoot, and edit a short film within a weekend. The festival supplied you with a list of specific instructions 
+                | (as described in the opening sequence) that we, as participants, had to include in our film.
+                | We received our instructions on a Friday evening, and about 15 people deliberated for hours late into the night what the film should be. I 
+                | ended up writing a script in an hour during the wee hours early that next morning. Then our group shot for about 19 hours Saturday, editing 
+                | all day on Sunday and showed the film THAT evening to an enthusiastic packed house in San Francisco.
+                | This version here features a different opening scene which was added a few months later to let a completely different packed house audience in 
+                | on the know that "this is not any ordinary story".
+                | Co-Produced, Written, Edited, and Directed by Jim Granato
         
-        .col-lg-4.col-sm-6
-          .card
-            a(href='#gallery', data-slide-to='8')
-              img.img-responsive(src='./images/robots.jpg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title Caffeinated Robots
-              p.card-text
         
-        .col-lg-4.col-sm-6
+        .col-lg-4.col-sm-6.col-xs-12
           .card
             a(href='#gallery', data-slide-to='9')
               img.img-responsive(src='./images/picnic.jpg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title The Picnic
-              p.card-text          
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent7')
+              #collapsecontent7.collapse
+                | Shot in only a couple of hours and edited in camera on a single roll of super 8 black and white film. 
+                | A look at food, wine and the complexity of the moment.
+                | Photographed, Edited, and Directed by Jim Granato
+
+      
     
       #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
         .modal-dialog(role='document')
@@ -103,21 +136,17 @@ block content
                 .item
                   iframe(src='https://player.vimeo.com/video/63921781', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item2')
                 .item
-                  iframe(src='https://player.vimeo.com/video/146865203', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item3')
+                  iframe(src='https://player.vimeo.com/video/32331105', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item3')  
+                .item
+                  iframe(src='https://player.vimeo.com/video/146865203', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item4')
                 .item
                   iframe(src='https://player.vimeo.com/video/7842372', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item4')
                 .item
-                  iframe(src='https://player.vimeo.com/video/7789499', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item5')
-                .item
-                  iframe(src='https://player.vimeo.com/video/7831395', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item6')
-                .item
-                  iframe(src='https://www.youtube.com/embed/H5Cbg1f0cRI', width='640', height='480', frameborder='0', allowfullscreen='', alt='item7')
+                  iframe(src='https://player.vimeo.com/video/7789499', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item6')
                 .item  
-                  iframe(src='https://player.vimeo.com/video/7842838', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item8')
+                  iframe(src='https://player.vimeo.com/video/7842838', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item7')
                 .item  
-                  iframe(src='https://www.youtube.com/embed/N7vnBNEQ9iw', width='640', height='480',frameborder='0', allowfullscreen='', alt='item9')  
-                .item  
-                  iframe(src='https://player.vimeo.com/video/7875292', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item10')
+                  iframe(src='https://player.vimeo.com/video/7875292', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item8')
   
               
           a.left.carousel-control(href='#gallery', role='button', data-slide='prev')

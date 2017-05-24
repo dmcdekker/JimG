@@ -99,9 +99,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand{
     font-family: "Quicksand", sans-serif;
-    margin-left: 30px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 #navbar.collapse.navbar-collapse{
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-nav{
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav.navbar-nav{
     font-family: "Quicksand", sans-serif;
     float: right;
-    font-size: .75em;
+    font-size: .7em;
     font-weight: bold;
 }
 
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-title{
     font-size: 0.56em;
-    margin-bottom: .2em;
+    margin-bottom: .7em;
 }
 
 .img-responsive {
@@ -288,7 +288,60 @@ h1, h2, h3, h4, h5, h6 {
 #collapsecontent{
     font-family: Open Sans, sans-serif;
     font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
 }
+#collapsecontent1{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+#collapsecontent2{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+#collapsecontent3{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+#collapsecontent4{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+#collapsecontent5{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+#collapsecontent6{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+#collapsecontent7{
+    font-family: Open Sans, sans-serif;
+    font-size: small;
+    margin: .7em;
+    line-height: 1.9em;
+    text-align: justify;
+}
+
 
 .glyphicon{
     font-style: normal;
