@@ -4,44 +4,135 @@ block content
   .container
    .row
     .page-header
-      h3 Recent Work
-      .row
-        .col-lg-4.col-sm-4
-          a(href='#gallery', data-slide-to='0')
-            img.thumbnail.img-responsive(src='./images/slug.jpg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-4
-          a(href='#gallery', data-slide-to='1')
-            img.thumbnail.img-responsive(src='./images/angels.jpg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-4
-          a(href='#gallery', data-slide-to='2')
-            img.thumbnail.img-responsive(src='./images/so_long.jpeg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-4
-          a(href='#gallery', data-slide-to='3')
-            img.thumbnail.img-responsive(src='./images/dream.jpeg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-4
-          a(href='#gallery', data-slide-to='4')
-            img.thumbnail.img-responsive(src='./images/designated_routes.jpeg', data-toggle='modal', data-target='#myModal')
-        .col-lg-4.col-sm-4
-          a(href='#gallery', data-slide-to='5')
-            img.thumbnail.img-responsive(src='./images/urban.jpg', data-toggle='modal', data-target='#myModal')    
+      button#showall All
+      button#films_button Films
+      button#documentary_button Documentaries
+      button#music_video_button Music Videos
+      button#freelance_button Freelance
       
+      .row
+        .card-deck
+        .col-lg-4.col-sm-6.col-xs-12(id='music1', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='0')
+              img.img-responsive(src='./images/love_open_the_door.jpeg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title Let My Love Open the Door
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent')
+              #collapsecontent.collapse
+               |"The idea for this video has been circling around my brain since we finished tracking it," says Zach Rogue, of Rogue Wave. "A fantasy about what I could tell my younger self if I had the chance."
+               | Music Video promo for Rogue Wave's 2017 album, Cover Me. 
+               | Directed, Co-Produced, Photographed, and Edited by Jim Granato. 
+        
+        .col-lg-4.col-sm-6.col-xs-12(id='freelance1', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='1')
+              img.img-responsive(src='./images/oowa.jpg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title Oowa Lenses
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent1')
+              #collapsecontent1.collapse
+               | Kickstarter campaign video for iphone 6 lens attachment.
+               | Directed, Photographed and Edited by Jim Granato
+               
+        .col-lg-4.col-sm-6.col-xs-12(id='freelance2', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='2')
+              img.img-responsive(src='./images/glowing_portrait.jpeg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title The Glowing Portrait
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent2')
+              #collapsecontent2.collapse
+               | Four hour pastel pencil instructional video for artist Cuong Nguyen.
+               | Directed, Photographed, and Edited by Jim Granato. 
+        
+        .col-lg-4.col-sm-6.col-xs-12(id='freelance3', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='3')
+              img.img-responsive(src='./images/breathe.jpeg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title The Campaign to Breathe Free
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent3')
+              #collapsecontent3.collapse
+               | Short campaign video for Breathe California, a Bay Area non-profit organization that fights lung disease, advocates for clean air and advances public health through education and services.
+               | Directed, Photographed, and Edited by Jim Granato.
+        
+        .col-lg-4.col-sm-6.col-xs-12(id='freelance4', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='4')
+              img.img-responsive(src='./images/adobe_spark.jpg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title Adobe Spark Aina Story
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent4')
+              #collapsecontent4.collapse
+               | Promo video for Adobe Spark.
+               | Videography by Jim Granato.  
+        
+        .col-lg-4.col-sm-6.col-xs-12(id='freelance4', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='5')
+              img.img-responsive(src='./images/usf_maps.jpg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title USF Maps
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent5')
+              #collapsecontent5.collapse
+               | Recruitment video for the University of San Francisco's Masters program in Asian Pacific Studies.
+               | Directed, Photographed, and Edited by Jim Granato.
+               
+        .col-lg-4.col-sm-6.col-xs-12(id='freelance4', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='6')
+              img.img-responsive(src='./images/science_sharing.jpg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title Science of Sharing
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent6')
+              #collapsecontent6.collapse
+               | One of several promo videos made for the Exploratorium and their Science of Sharing exhibition, where they investigate competition, 
+               | cooperation, and social interaction. 
+               | An unexpected event occurs in the face of a co-worker. Do you bring it up or let it hang? Many critical challenges we all face—issues like 
+               | energy crises, international conflict, ecosystem collapse, and climate change—revolve around social perceptions, expectations, and interactions. 
+               | Directed, Written, Co-Produced, Photographed, and Edited by Jim Granato.
+       
+
+        
+        
+        
+                
+
+      
+    
       #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
         .modal-dialog(role='document')
           .modal-content
             #gallery.carousel.slide(data-interval='false')
               .carousel-inner
-                .item.active
-                  iframe(src='https://www.youtube.com/embed/HTO55LIzky8', width='640', height='480', frameborder='0', allowfullscreen='', alt='item1')
+              
+       
+                .item.active 
+                  iframe(src='https://www.youtube.com/embed/-0A4s3DLpOI', frameborder='0', allowfullscreen='', alt='let_my_love_open_the_door')
                 .item
-                  iframe(src='https://player.vimeo.com/video/63921781', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item2')
+                  iframe(src='https://player.vimeo.com/video/168104807', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='oowa')  
                 .item
-                  iframe(src='https://player.vimeo.com/video/146865203', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item3')
+                  iframe(src='https://www.youtube.com/embed/_vKdawO9O0U', frameborder='0', allowfullscreen='', alt='glowing_portrait')
                 .item
-                  iframe(src='https://player.vimeo.com/video/7842372', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item4')
+                  iframe(src='https://www.youtube.com/embed/yGBDutELze4', frameborder='0', allowfullscreen='', alt='breathe')
                 .item
-                  iframe(src='https://player.vimeo.com/video/7789499', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item5')
+                  iframe(src='https://player.vimeo.com/video/176203438', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='adobe_spark')  
                 .item
-                  iframe(src='https://player.vimeo.com/video/7831395', width='640', height='480', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='item6')
+                  iframe(src='https://player.vimeo.com/video/170989280', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='usf_maps')
+                .item
+                  iframe(src='https://www.youtube.com/embed/FPg7BHZcae8', frameborder='0', allowfullscreen='', alt='science_of_sharing')  
+
+                
+               
+            
   
               
           a.left.carousel-control(href='#gallery', role='button', data-slide='prev')
@@ -50,3 +141,46 @@ block content
             span.glyphicon.glyphicon-chevron-right
           br
           button.btn.btn-secondary(type='btn', data-dismiss='modal') x
+          
+          
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      $('.glyphicon-chevron-down').click(function(){
+      $("p.card-text").slideToggle();
+      $(this).toggleClass("glyphicon-chevron-down").toggleClass("glyphicon-chevron-up");
+      });
+      });
+      
+    script(type='text/javascript').
+      $(document).ready(function(){
+      $('#showall').click(function(){
+      $('.targetDiv').show();
+      });
+        
+      $('#films_button').click(function(){
+      $('.targetDiv').hide();
+      $('#film1, #film2, #film3, #film4, #film5, #film6, #film7, #film8').show();
+      });
+      
+      $('#documentary_button').click(function(){
+      $('.targetDiv').hide();
+      $('#documentary1, #documentary2').show();
+      }); 
+      
+      $('#music_video_button').click(function(){
+      $('.targetDiv').hide();
+      $('#music1').show();
+      }); 
+      
+      $('#freelance_button').click(function(){
+      $('.targetDiv').hide();
+      $('#freelance1').show();
+      }); 
+        
+        
+
+       
+      });
+      
+   

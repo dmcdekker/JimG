@@ -1,25 +1,12 @@
-extends layout
-
-block content
-  .container
-   .row
-    .page-header
-      button#showall All
-      button#films_button Films
-      button#documentary_button Documentaries
-      button#music_video_button Music Videos
-      button#work Work
-      
-      .row
-        .card-deck 
+        /*
         .col-lg-4.col-sm-6.col-xs-12(id='film1', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='0')
+            a(href='#gallery', data-slide-to='11')
               img.img-responsive(src='./images/slug.jpg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Slug War
               p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent2')
               #collapsecontent.collapse
                | Army soldiers, on a mission to protect a satellite dish, are caught up in a battle with an unexpected visitor. Meanwhile, filmmaker Jim Granato collaborates with his son, Alex Rey (age 4), competing with his unstoppable energy and spontaneous creativity.
                | Photographed, Edited, Written and Directed by Jim Granato
@@ -27,25 +14,26 @@ block content
             
         .col-lg-4.col-sm-6.col-xs-12(id='film2', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='1')
+            a(href='#gallery', data-slide-to='12')
               img.img-responsive(src='./images/angels.jpg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Angels
               p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent1')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent12')
               #collapsecontent1.collapse
                | An innocent man walks through San Francisco clueless to the fact that the Blue Angels are in town practicing their air show. 
                | After several encounters with the mysterious roars from above and the city's more colorful characters, our hero snaps and runs amok, seeking shelter. 
                | The movies are just around the corner! But, in our hero's case, he's on their corner.
                
+               
         .col-lg-4.col-sm-6.col-xs-12(id='film3', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='2')
+            a(href='#gallery', data-slide-to='21')
               img.img-responsive(src='./images/west.jpg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title West Is San Francisco
               p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent2')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent21')
               #collapsecontent2.collapse 
                 | A film collaboration (32 min) between six San Francisco filmmakers.  A frenetic fusion of night and day, movement and stasis, 
                 | work and play - an iconographic city rides the flux of boom and bust in the 21st century. 
@@ -54,7 +42,7 @@ block content
               
         .col-lg-4.col-sm-6.col-xs-12(id='film4', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='3')
+            a(href='#gallery', data-slide-to='22')
               img.img-responsive(src='./images/so_long.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title So Long, Kodachrome
@@ -64,10 +52,29 @@ block content
                 | A deal goes down in a shady motel room where our (anti-)hero gets more than he bargains for. 
                 | "So Long, Kodachrome" is an ode to super 8 and the beloved, now defunct, popular color film stock while paying homage to a famous 70’s American landmark film.
                 | Photographed, Edited, Written and Directed by Jim Granato
+                
               
+        .col-lg-4.col-sm-6.col-xs-12(id='documentary1', class='targetDiv')
+          .card
+            a(href='#gallery', data-slide-to='24')
+              img.img-responsive(src='./images/d_tour.jpg', data-toggle='modal', data-target='#myModal')
+            .card-block
+              h2.card-title D Tour
+              p.card-text(style='display: none')
+              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent8')
+              #collapsecontent8.collapse
+                | D TOUR (99 mins), is an award winning, powerful, evocative and deeply personal story. Combining a band road trip with a personal 
+                | quest for an organ donor, the film follows the journey of Pat Spurgeon, a talented indie rock musician on the rise, whose life becomes
+                | consumed with the care and feeding of his failing kidney. Spurgeon, a previous kidney transplant recipient, is part of the organ donor / recipient 
+                | community, a special group whose lives become entwined in life and death. On one side are those who are saved through tragedy or by an incredible gift 
+                | from a living donor; on the other are the families of the donors, who are offered a chance for hope and bittersweet resolution for their loss. 
+                | D TOUR is filled with unexpected twists and the joys and sorrows of life. 
+                | Produced, Directed, Photographed, and Edited by Jim Granato       
+        
+        
         .col-lg-4.col-sm-6.col-xs-12(id='film5', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='4')
+            a(href='#gallery', data-slide-to='25')
               img.img-responsive(src='./images/dream.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Afternoon Dream
@@ -78,10 +85,11 @@ block content
                 | (later hand-processed), "Afternoon Dream" comes from a series of films which take on solitude, landscapes, and the passing of time with more 
                 | of an experimental and minimalist approach.
                 | Photographed, Edited and Directed by Jim Granato
+                
               
         .col-lg-4.col-sm-6.col-xs-12(id='film6', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='5')
+            a(href='#gallery', data-slide-to='26')
               img.img-responsive(src='./images/designated_routes.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Designated Routes
@@ -98,7 +106,7 @@ block content
       
         .col-lg-4.col-sm-6.col-xs-12(id='film7', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='6')
+            a(href='#gallery', data-slide-to='29')
               img.img-responsive(src='./images/skins.jpeg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title Human Skins
@@ -118,7 +126,7 @@ block content
         
         .col-lg-4.col-sm-6.col-xs-12(id='film8', class='targetDiv')
           .card
-            a(href='#gallery', data-slide-to='7')
+            a(href='#gallery', data-slide-to='32')
               img.img-responsive(src='./images/picnic.jpg', data-toggle='modal', data-target='#myModal')
             .card-block
               h2.card-title The Picnic
@@ -128,44 +136,21 @@ block content
                 | Shot in only a couple of hours and edited in camera on a single roll of super 8 black and white film. 
                 | A look at food, wine and the complexity of the moment.
                 | Photographed, Edited, and Directed by Jim Granato
-        
-        
-        .col-lg-4.col-sm-6.col-xs-12(id='documentary1', class='targetDiv')
-          .card
-            a(href='#gallery', data-slide-to='8')
-              img.img-responsive(src='./images/d_tour.jpg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title D Tour
-              p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent8')
-              #collapsecontent8.collapse
-                | D TOUR (99 mins), is an award winning, powerful, evocative and deeply personal story. Combining a band road trip with a personal 
-                | quest for an organ donor, the film follows the journey of Pat Spurgeon, a talented indie rock musician on the rise, whose life becomes
-                | consumed with the care and feeding of his failing kidney. Spurgeon, a previous kidney transplant recipient, is part of the organ donor / recipient 
-                | community, a special group whose lives become entwined in life and death. On one side are those who are saved through tragedy or by an incredible gift 
-                | from a living donor; on the other are the families of the donors, who are offered a chance for hope and bittersweet resolution for their loss. 
-                | D TOUR is filled with unexpected twists and the joys and sorrows of life. 
-                | Produced, Directed, Photographed, and Edited by Jim Granato       
-        
                 
-
-      
-    
-      #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-        .modal-dialog(role='document')
-          .modal-content
-            #gallery.carousel.slide(data-interval='false')
-              .carousel-inner
-              
-       
-                .item.active 
-                  iframe(src='https://www.youtube.com/embed/HTO55LIzky8', frameborder='0', allowfullscreen='', alt='slug_war')
+                
+                
+                
+                .item 
+                  iframe(src='https://www.youtube.com/embed/HTO55LIzky8', frameborder='0', allowfullscreen='', alt='slug_war')  
                 .item
                   iframe(src='https://player.vimeo.com/video/63921781', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='angels')
                 .item
                   iframe(src='https://player.vimeo.com/video/32331105', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='west_is_sf')  
                 .item
                   iframe(src='https://player.vimeo.com/video/146865203', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='so_long')
+                .item  
+                  iframe(src='https://player.vimeo.com/video/5313950', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='d_tour')
+                
                 .item
                   iframe(src='https://player.vimeo.com/video/7842372', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='afternoon_dream')
                 .item
@@ -176,47 +161,4 @@ block content
                   iframe(src='https://player.vimeo.com/video/7875292', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='the_picnic')
             
            
-                .item  
-                  iframe(src='https://player.vimeo.com/video/5313950', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='d_tour')
-            
-  
-              
-          a.left.carousel-control(href='#gallery', role='button', data-slide='prev')
-            span.glyphicon.glyphicon-chevron-left
-          a.right.carousel-control(href='#gallery', role='button', data-slide='next')
-            span.glyphicon.glyphicon-chevron-right
-          br
-          button.btn.btn-secondary(type='btn', data-dismiss='modal') x
-          
-          
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
-    script(type='text/javascript').
-      $(document).ready(function(){
-      $('.glyphicon-chevron-down').click(function(){
-      $("p.card-text").slideToggle();
-      $(this).toggleClass("glyphicon-chevron-down").toggleClass("glyphicon-chevron-up");
-      });
-      });
-      
-    script(type='text/javascript').
-      $(document).ready(function(){
-      $('#showall').click(function(){
-      $('.targetDiv').show();
-      });
         
-      $('#films_button').click(function(){
-      $('.targetDiv').hide();
-      $('#film1, #film2, #film3, #film4, #film5, #film6, #film7, #film8').show();
-      });
-      
-      $('#documentary_button').click(function(){
-      $('.targetDiv').hide();
-      $('#documentary1, #documentary2').show();
-      }); 
-        
-        
-
-       
-      });
-      
-   
