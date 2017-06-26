@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-backdrop.in {
-	opacity: 0.16 !important;
+	opacity: 0.7 !important;
 }
 
 .modal.and.carousel {
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card{
     padding-bottom: 0.2em;
-    border: 1px solid #fff;
+    border: 1px solid #4d4d4d;
 }
 
 .card-title{
@@ -285,69 +285,14 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 182px;
 }
 
-#collapsecontent{
+#collapsecontent, #collapsecontent1, #collapsecontent2, #collapsecontent3, #collapsecontent4, #collapsecontent5, #collapsecontent6, #collapsecontent7{
     font-family: Open Sans, sans-serif;
     font-size: small;
     margin: .7em;
     line-height: 1.9em;
     text-align: justify;
 }
-#collapsecontent1{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent2{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent3{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent4{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent5{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent6{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent7{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
-#collapsecontent8{
-    font-family: Open Sans, sans-serif;
-    font-size: small;
-    margin: .7em;
-    line-height: 1.9em;
-    text-align: justify;
-}
+
 
 .glyphicon{
     font-style: normal;
