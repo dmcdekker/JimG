@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute; 
 }
 
-.col-lg-4.col-sm-6{
+.col-xl-3.col-lg-4.col-sm-6.col-xs-12.col-sm-6{
     display: inline-block;
     margin-bottom: 1em;
     float: none;
@@ -283,10 +283,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding:0;
   width: 100%;
-  max-height: 182px;
+  
 }
 
-#collapsecontent, #collapsecontent1, #collapsecontent2, #collapsecontent3, #collapsecontent4, #collapsecontent5, #collapsecontent6, #collapsecontent7{
+#collapsecontent, #collapsecontent1, #collapsecontent2, #collapsecontent3, #collapsecontent4, #collapsecontent5, 
+#collapsecontent6, #collapsecontent7, #collapsecontent8, #collapsecontent9, #collapsecontent10, #collapsecontent11, 
+#collapsecontent12, #collapsecontent13, #collapsecontent14, #collapsecontent15, #collapsecontent16, #collapsecontent17{
     font-family: Open Sans, sans-serif;
     font-size: small;
     margin: .7em;
