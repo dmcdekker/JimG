@@ -1,64 +1,15 @@
      
                
-        .col-lg-4.col-sm-6.col-xs-12(id='film3', class='targetDiv')
-          .card
-            a(href='#gallery', data-slide-to='21')
-              img.img-responsive(src='./images/west.jpg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title West Is San Francisco
-              p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent21')
-              #collapsecontent2.collapse 
-                | A film collaboration (32 min) between six San Francisco filmmakers.  A frenetic fusion of night and day, movement and stasis, 
-                | work and play - an iconographic city rides the flux of boom and bust in the 21st century. 
-                | Co-Directed, Produced, Edited and photographed by Jim Granato
+        
 
               
-        .col-lg-4.col-sm-6.col-xs-12(id='film4', class='targetDiv')
-          .card
-            a(href='#gallery', data-slide-to='22')
-              img.img-responsive(src='./images/so_long.jpeg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title So Long, Kodachrome
-              p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent3')
-              #collapsecontent3.collapse
-                | A deal goes down in a shady motel room where our (anti-)hero gets more than he bargains for. 
-                | "So Long, Kodachrome" is an ode to super 8 and the beloved, now defunct, popular color film stock while paying homage to a famous 70’s American landmark film.
-                | Photographed, Edited, Written and Directed by Jim Granato
+        
                 
               
-        .col-lg-4.col-sm-6.col-xs-12(id='documentary1', class='targetDiv')
-          .card
-            a(href='#gallery', data-slide-to='24')
-              img.img-responsive(src='./images/d_tour.jpg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title D Tour
-              p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent8')
-              #collapsecontent8.collapse
-                | D TOUR (99 mins), is an award winning, powerful, evocative and deeply personal story. Combining a band road trip with a personal 
-                | quest for an organ donor, the film follows the journey of Pat Spurgeon, a talented indie rock musician on the rise, whose life becomes
-                | consumed with the care and feeding of his failing kidney. Spurgeon, a previous kidney transplant recipient, is part of the organ donor / recipient 
-                | community, a special group whose lives become entwined in life and death. On one side are those who are saved through tragedy or by an incredible gift 
-                | from a living donor; on the other are the families of the donors, who are offered a chance for hope and bittersweet resolution for their loss. 
-                | D TOUR is filled with unexpected twists and the joys and sorrows of life. 
-                | Produced, Directed, Photographed, and Edited by Jim Granato       
+           
         
         
-        .col-lg-4.col-sm-6.col-xs-12(id='film5', class='targetDiv')
-          .card
-            a(href='#gallery', data-slide-to='25')
-              img.img-responsive(src='./images/dream.jpeg', data-toggle='modal', data-target='#myModal')
-            .card-block
-              h2.card-title Afternoon Dream
-              p.card-text(style='display: none')
-              span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent4')
-              #collapsecontent4.collapse
-                | A woman falls asleep on a mountain top, descending into a dream that reconnects her with nature. Shot on Super 8 Kodachrome and Ektachrome 
-                | (later hand-processed), "Afternoon Dream" comes from a series of films which take on solitude, landscapes, and the passing of time with more 
-                | of an experimental and minimalist approach.
-                | Photographed, Edited and Directed by Jim Granato
+        
                 
               
         .col-lg-4.col-sm-6.col-xs-12(id='film6', class='targetDiv')
@@ -114,9 +65,9 @@
                 
                 
               
-                  iframe(src='https://player.vimeo.com/video/32331105', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='west_is_sf')  
+                  
                 .item
-                  iframe(src='https://player.vimeo.com/video/146865203', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='so_long')
+                  
                 .item  
                   iframe(src='https://player.vimeo.com/video/5313950', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='d_tour')
                 
