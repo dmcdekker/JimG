@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 .modal-content{
     overflow: hidden !important;
     background: #e6e6e6;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .modal-body iframe{
