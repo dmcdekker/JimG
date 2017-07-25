@@ -24,11 +24,10 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 85%;
     min-height: 100%;
     padding: 0;
     margin-top: 2em;
-   
     background-color: #262626;
 }
 
@@ -243,8 +242,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-content{
-    height: 520px;
+    height: 26em;
     overflow: hidden !important;
+    background: #e6e6e6;
+    margin-top: 10%;
 }
 
 .modal-body iframe{
@@ -265,18 +266,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .col-xl-3.col-lg-4.col-sm-6.col-xs-12.col-sm-6{
     display: inline-block;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     float: none;
 }
 
 .card{
-    padding-bottom: 0.2em;
-    border: 1px solid #4d4d4d;
+    padding-bottom: 0.5em;
+    border: 1px solid #666666;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .card-title{
-    font-size: 0.56em;
-    margin-bottom: .7em;
+    font-size: 0.7em;
+    margin-bottom: .9em;
 }
 
 .img-responsive {
@@ -285,8 +287,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding:0;
   width: 100%;
-  
 }
+
+
 
 #collapsecontent, #collapsecontent1, #collapsecontent2, #collapsecontent3, #collapsecontent4, #collapsecontent5, 
 #collapsecontent6, #collapsecontent7, #collapsecontent8, #collapsecontent9, #collapsecontent10, #collapsecontent11, 
@@ -305,5 +308,34 @@ h1, h2, h3, h4, h5, h6 {
 .glyphicon{
     font-style: normal;
     font-size: inherit;
+}
+
+button.top{
+    background-color: transparent;
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    color: #e6e6e6;
+    font-size: .75em;
+    text-transform: uppercase;
+    margin: .2em;
+}
+
+button.top:hover{
+    background-color: #e6e6e6;
+    color: #262626;
+    border: transparent;
+    
+}
+
+.close {
+    float: right;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+    background-color: none;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
 }
 
