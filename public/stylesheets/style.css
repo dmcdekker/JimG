@@ -317,14 +317,21 @@ button.top{
     color: #e6e6e6;
     font-size: .75em;
     text-transform: uppercase;
-    margin: .2em;
+    margin: .35em;
+    letter-spacing: .02em;
 }
 
 button.top:hover{
     background-color: #e6e6e6;
     color: #262626;
     border: transparent;
-    
+}
+
+button.top:focus{
+    background-color: #e6e6e6;
+    color: #262626;
+    border: transparent;
+    outline:0;
 }
 
 .close {
