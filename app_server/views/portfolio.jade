@@ -9,6 +9,7 @@ block content
       button.top.focus#documentary_button Documentary
       button.top.focus#music_video_button Music Video
       button.top.focus#freelance_button Freelance
+      button.top.focus#radio_button Radio
       
       .row
         .card-deck
@@ -471,7 +472,29 @@ block content
                 #collapsecontent32.collapse
                   | Shot in only a couple of hours and edited in camera on a single roll of super 8 black and white film. 
                   | A look at food, wine and the complexity of the moment.
-                  | Photographed, Edited, and Directed by Jim Granato        
+                  | Photographed, Edited, and Directed by Jim Granato
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio1', class='targetDiv')
+            .card
+              a(href='#gallery', data-slide-to='33')
+                img.img-responsive(src='./images/gil_ray.jpeg', data-toggle='modal', data-target='#myModal34')
+              .card-block
+                h2.card-title W!C!P! #62
+                p.card-text(style='display: none')
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent33')
+                #collapsecontent33.collapse
+                  | Gil Ray and Alison Levy Get Loud, Remembers Scott Miller
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio1', class='targetDiv')
+            .card
+              a(href='#gallery', data-slide-to='34')
+                img.img-responsive(src='./images/mummies.jpeg', data-toggle='modal', data-target='#myModal35')
+              .card-block
+                h2.card-title W!C!P! #69
+                p.card-text(style='display: none')
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent34')
+                #collapsecontent34.collapse
+                  | Mummies Maz and Russell Sits and Spins
                   
                   
                      
@@ -781,12 +804,32 @@ block content
               .modal-body 
                 iframe(src='https://player.vimeo.com/video/7875292', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='the_picnic')
         
+        #myModal34.modal.fade
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal')
+                  span(aria-hidden='true') CLOSE
+              .modal-body 
+                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-62-gil-ray-and-alison-levy-get-loud-remembers-scott-miller%2F&light=1', frameborder='0')
+        
+        #myModal35.modal.fade
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal')
+                  span(aria-hidden='true') CLOSE
+              .modal-body 
+                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-69-mummies-maz-russell-sits-and-spins%2F&light=1', frameborder='0')
+
+
+        
         
         
     script(type='text/javascript').
     
       $(function(){
-      $('#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8, #myModal9, #myModal10, #myModal11, #myModal12, #myModal13, #myModal14, #myModal15, #myModal16, #myModal17, #myModal18, #myModal19, #myModal20, #myModal21, #myModal22, #myModal23, #myModal24, #myModal25, #myModal26, #myModal27, #myModal28, #myModal29, #myModal30, #myModal31, #myModal32, #myModal33').on('hidden.bs.modal', function (e) {
+      $('#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8, #myModal9, #myModal10, #myModal11, #myModal12, #myModal13, #myModal14, #myModal15, #myModal16, #myModal17, #myModal18, #myModal19, #myModal20, #myModal21, #myModal22, #myModal23, #myModal24, #myModal25, #myModal26, #myModal27, #myModal28, #myModal29, #myModal30, #myModal31, #myModal32, #myModal33, #myModal34, #myModal35').on('hidden.bs.modal', function (e) {
       $iframe = $(this).find("iframe");
       $iframe.attr("src", $iframe.attr("src"));
       });
@@ -825,6 +868,11 @@ block content
       $('#freelance_button').click(function(){
       $('.targetDiv').hide();
       $('#freelance1, #freelance2, #freelance3, #freelance4, #freelance5, #freelance6, #freelance7, #freelance8, #freelance9, #freelance10, #freelance11').show();
+      }); 
+      
+      $('#radio_button').click(function(){
+      $('.targetDiv').hide();
+      $('#radio1, #radio2').show();
       }); 
       
       });
