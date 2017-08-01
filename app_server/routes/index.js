@@ -12,11 +12,8 @@ router.get('/about', ctrlMain.about);
 /* GET portfolio page. */ 
 router.get('/portfolio', ctrlMain.portfolio);
 
-/* GET films page. */ 
-router.get('/films', ctrlMain.films);
-
 /* GET radio page. */ 
-router.get('/radio', ctrlMain.radio);
+router.get('/dtour', ctrlMain.dtour);
 
 
 module.exports = router;

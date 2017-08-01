@@ -41,6 +41,17 @@ body{
     margin-bottom: 30px;
 }
 
+h3{
+    font-family: "Quicksand", sans-serif;
+     color: #ffffff;
+}
+
+p{
+    font-family: "Quicksand", sans-serif;
+    font-size: .75em;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 0.8em;
