@@ -275,6 +275,15 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute; 
 }
 
+.fade {
+   opacity: 0;
+   -webkit-transition: opacity 0.25s linear;
+      -moz-transition: opacity 0.25s linear;
+       -ms-transition: opacity 0.25s linear;
+        -o-transition: opacity 0.25s linear;
+           transition: opacity 0.25s linear;
+ }
+
 .col-xl-3.col-lg-4.col-sm-6.col-xs-12.col-sm-6{
     display: inline-block;
     margin-bottom: 2em;
@@ -287,6 +296,8 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 8px 6px -6px black;
 }
 
+
+
 .card-title{
     font-size: 0.7em;
     margin-bottom: .9em;
@@ -298,7 +309,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding:0;
   width: 100%;
+  -webkit-filter: brightness(85%); 
 }
+
+
+.img-responsive:hover{
+    -webkit-filter: brightness(110%); 
+    -webkit-transition: all 1s ease;
+}
+
 
 
 
@@ -344,6 +363,12 @@ button.top:focus{
     border: transparent;
     outline:0;
 }
+
+.highlight {
+    background-color: #ffa;
+}
+
+
 
 .close {
     float: right;

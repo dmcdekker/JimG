@@ -3,13 +3,15 @@ extends layout
 block content
   .container
    .row
-    .page-header
+    .page-header#buttons
       button.top.focus#showall(autofocus='') All
       button.top.focus#films_button Films
       button.top.focus#documentary_button Documentary
       button.top.focus#music_video_button Music Video
       button.top.focus#freelance_button Freelance
       button.top.focus#radio_button Radio
+      
+
       
       .row
         .card-deck
@@ -859,6 +861,7 @@ block content
       });
       });
       
+
     
       $(document).ready(function(){
       
@@ -891,8 +894,11 @@ block content
       $('#radio1, #radio2').show();
       }); 
       
+   
+        
       });
-      
+
+
       
     
  
