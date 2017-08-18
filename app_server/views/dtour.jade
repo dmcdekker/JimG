@@ -7,10 +7,24 @@ block content
             div(page-header='')
             h3
         
-        .col-md-3
-            img.img-responsive(src='./images/dtour.jpg')
+        .col-md-4
+            img.img-responsive1(src='./images/dtour.jpg')
+            br
+            form.text-center(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+              input(type='hidden', name='cmd', value='_xclick')
+              input(type='hidden', name='business', value='dtourthemovie@gmail.com')
+              input(type='hidden', name='lc', value='BM')
+              input(type='hidden', name='item_name', value='D Tour DVD')
+              input(type='hidden', name='amount', value='25.00')
+              input(type='hidden', name='currency_code', value='USD')
+              input(type='hidden', name='button_subtype', value='services')
+              input(type='hidden', name='no_note', value='0')
+              input(type='hidden', name='bn', value='PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest')
+              input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+              img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
+
         
-        .col-md-9
+        .col-md-8
             p
                 | D TOUR (99 mins), directed by Jim Granato, is a powerful, evocative and deeply personal story. Combining a band road trip with a 
                 | personal quest for an organ donor, the film follows the journey of Pat Spurgeon, a talented indie rock musician on the rise, whose
@@ -37,9 +51,7 @@ block content
                 | Produced, Directed, Photographed & Co-Edited by Jim Granato
         br
         br
-        .col-md-12
+        .col-md-12.text-center
             p
                 br
-                | FOR THOSE INTERESTED IN PURCHASING A D TOUR DVD, please send $25 (US orders only; incl shipping & handling charges) via PayPal to dtourthemovie@gmail.com
-                | Be sure to include your full shipping address and a note and I will receive it and fulfill your order within the next 1-2 business days. For international order, please email me above for rates. Thank You!
-            
+                | FOR THOSE INTERESTED IN PURCHASING A D TOUR DVD, please use the paypal link at the top of this page!
