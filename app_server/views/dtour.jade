@@ -3,56 +3,55 @@ extends layout
 block content
     .container
        .row
-        .span12.text-center
-            div(page-header='')
-            h3
-        
-        .col-md-4
-            img.img-responsive1(src='./images/dtour.jpg')
-         
-            br
-            form.text-center(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
-              input(type='hidden', name='cmd', value='_xclick')
-              input(type='hidden', name='business', value='dtourthemovie@gmail.com')
-              input(type='hidden', name='lc', value='BM')
-              input(type='hidden', name='item_name', value='D Tour DVD')
-              input(type='hidden', name='amount', value='25.00')
-              input(type='hidden', name='currency_code', value='USD')
-              input(type='hidden', name='button_subtype', value='services')
-              input(type='hidden', name='no_note', value='0')
-              input(type='hidden', name='bn', value='PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest')
-              input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
-              img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
-
-        
-        .col-md-8
-            p
-                | D TOUR (99 mins), directed by Jim Granato, is a powerful, evocative and deeply personal story. Combining a band road trip with a 
-                | personal quest for an organ donor, the film follows the journey of Pat Spurgeon, a talented indie rock musician on the rise, whose
-                | life becomes consumed with the care and feeding of his failing kidney. Spurgeon, a previous kidney transplant recipient, is part 
-                | of the organ donor / recipient community, a special group whose lives become entwined in life and death. 
-                br    
-                | On one side are those who 
-                | are saved through tragedy or by an incredible gift from a living donor; on the other are the families of the donors, who are offered 
-                | a chance for hope and bittersweet resolution for their loss. D TOUR is filled with unexpected twists and the joys and sorrows of life. 
-                | Pat Spurgeon is an integral part of the indie pop band Rogue Wave, whose four critically acclaimed albums and performances worldwide have 
-                | earned them a growing fan base. As the film begins, Spurgeon is embarking on tour, an exhausting prospect even for healthy musicians, but 
-                | almost impossible for someone coping with dialysis, dietary restrictions and the search for a living donor match. 
-                br
-                | While his choice to keep 
-                | touring and working towards the band's goals is put to the test, Spurgeon continues to deal with his challenges in a straightforward and 
-                | matter-of-fact way. D TOUR addresses issues within the U.S. healthcare system, including the lack of affordable insurance, the importance of 
-                | organ donation, and much more. 
-                br
-                br
-                | Featuring live performances from Ben Gibbard (Death Cab for Cutie), Nada Surf, John Vanderslice, The Moore Brothers, 
-                | and of course, Rogue Wave.
-                br
-                br
-                | Produced, Directed, Photographed & Co-Edited by Jim Granato
-        br
-        br
-        .col-md-12.text-center
-            p
-                br
-                | FOR THOSE INTERESTED IN PURCHASING A D TOUR DVD, please use the paypal link at the top of this page!
+        .container-fluid
+            .box
+                #sidebar.column.col-md-4.hidden-xs-down
+                    ul.nav.nav-pills.flex-column
+                        li.nav-item
+                            img.img-responsive1(src='./images/dtour.jpg')
+                 
+                         li.nav-item
+                            form.text-center(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+                              input(type='hidden', name='cmd', value='_xclick')
+                              input(type='hidden', name='business', value='dtourthemovie@gmail.com')
+                              input(type='hidden', name='lc', value='BM')
+                              input(type='hidden', name='item_name', value='D Tour DVD')
+                              input(type='hidden', name='amount', value='25.00')
+                              input(type='hidden', name='currency_code', value='USD')
+                              input(type='hidden', name='button_subtype', value='services')
+                              input(type='hidden', name='no_note', value='0')
+                              input(type='hidden', name='bn', value='PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest')
+                              input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+                              img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
+                
+                        
+                #main.column.col-md-8.offset-md-4.pt-3.pull-right
+                    p
+                        | D TOUR (99 mins), directed by Jim Granato, is a powerful, evocative and deeply personal story. Combining a band road trip with a 
+                        | personal quest for an organ donor, the film follows the journey of Pat Spurgeon, a talented indie rock musician on the rise, whose
+                        | life becomes consumed with the care and feeding of his failing kidney. Spurgeon, a previous kidney transplant recipient, is part 
+                        | of the organ donor / recipient community, a special group whose lives become entwined in life and death. 
+                        br
+                        br
+                        | On one side are those who 
+                        | are saved through tragedy or by an incredible gift from a living donor; on the other are the families of the donors, who are offered 
+                        | a chance for hope and bittersweet resolution for their loss. D TOUR is filled with unexpected twists and the joys and sorrows of life. 
+                        | Pat Spurgeon is an integral part of the indie pop band Rogue Wave, whose four critically acclaimed albums and performances worldwide have 
+                        | earned them a growing fan base. As the film begins, Spurgeon is embarking on tour, an exhausting prospect even for healthy musicians, but 
+                        | almost impossible for someone coping with dialysis, dietary restrictions and the search for a living donor match. 
+                        br
+                        br
+                        | While his choice to keep 
+                        | touring and working towards the band's goals is put to the test, Spurgeon continues to deal with his challenges in a straightforward and 
+                        | matter-of-fact way. D TOUR addresses issues within the U.S. healthcare system, including the lack of affordable insurance, the importance of 
+                        | organ donation, and much more. 
+                        br
+                        br
+                        | Featuring live performances from Ben Gibbard (Death Cab for Cutie), Nada Surf, John Vanderslice, The Moore Brothers, 
+                        | and of course, Rogue Wave.
+                        br
+                        br
+                        | Produced, Directed, Photographed & Co-Edited by Jim Granato
+                        br
+                        br
+                        | FOR THOSE INTERESTED IN PURCHASING A D TOUR DVD, please use the paypal link on this page! 
