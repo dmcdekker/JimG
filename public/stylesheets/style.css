@@ -21,6 +21,7 @@ body{
     padding-top: 0;
     font-size: .7em;
     line-height: 30px;
+   
 }
 
 .container{
@@ -41,46 +42,61 @@ body{
 .row{
     margin-top: 1em;
     margin-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 
 .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    letter-spacing: .07em;
+    font-weight: 200 !important;
+    font-family: "Open Sans", sans-serif;
+    color: #f9f9f9;
+    line-height: normal;
+    text-align: center;
 }
 
-h3{
-    font-family: "Quicksand", sans-serif;
-     color: #f9f9f9;
-}
 
 p{
     font-family: "Quicksand", sans-serif;
     font-size: .75em;
     color: #f9f9f9;
+    letter-spacing: .05em;
+    font-weight: 200 !important;
 }
 
 p1{
     font-family: "Quicksand", sans-serif;
     font-size: .75em;
-    color: whitesmoke;
+    color: black;
+    letter-spacing: .05em;
+    font-weight: 200 !important;
 }
 
 em{
     font-family: "Quicksand", sans-serif;
     font-size: .75em;
-    color: #f9f9f9;
+    color: whitesmoke;
+    letter-spacing: .05em;
+    font-weight: 200 !important;
+    font-style: italic;
 }
 em1{
     font-family: "Quicksand", sans-serif;
     font-size: .75em;
-    color: whitesmoke;
+    color: black;
+    letter-spacing: .05em;
+    font-weight: 200 !important;
+    font-style: italic;
 }
 
 strong{
     font-family: "Quicksand", sans-serif;
     font-size: .75em;
     color: #f9f9f9;
+   letter-spacing: .05em;
+   font-weight: 200 !important;
 }
 
 
@@ -149,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.15em;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 #navbar.collapse.navbar-collapse{
@@ -159,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-nav{
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -169,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
     float: right;
     font-size: .75em;
-    font-weight: bold;
+    letter-spacing: .1em;
 }
 
 
@@ -316,8 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icons{
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-bottom: 1em;
     background-color: #262626;
     margin-left:auto;
     margin-right:auto;
@@ -370,12 +386,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------Screen Size------------------------- */
 
+/* xs */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.6em;
+    }
+    iframe.large{
+        height: 75%;
+    }
+}
 
 
 /* sm */
 @media screen and (min-width: 768px) {
     body {
         font-size: 1.6em;
+    }
+    iframe.large{
+        height: 75%;
     }
 }
 
@@ -385,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.6em;
     }
     .jumbotron-fluid2{
-      height: 50%;
+      height: 75%;
   }
 }
 
@@ -523,6 +557,7 @@ h1, h2, h3, h4, h5, h6 {
 .glyphicon{
     font-style: normal;
     font-size: inherit;
+    text-align: center !important;
 }
 
 button.top{
@@ -558,19 +593,13 @@ button.top:focus{
     opacity: .8;
 }
 
-/*-----------------D Tour--------------------*/
-
-form{
-    margin: 1em;
-}
-
 
 
 
 /*-----------------About--------------------*/
 
 .jumbotron.jumbotron-fluid2{
-    margin-top: 2em;
+    margin-top: 1.3em;
     width: 70%;
     height: 60vh;
     position: inherit;
@@ -584,9 +613,8 @@ form{
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
     -ms-backface-visibility:     hidden;
-    
     text-align:center;
-    border: 1px solid #666666;
+    border: 2px solid #666666;
     margin-left:auto;
     margin-right:auto;
 }
@@ -621,6 +649,24 @@ iframe.large{
     text-align:center;
     border: 1px solid #666666;
 }
+
+.lastpar{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 3em;
+}
+
+p.lead{
+    margin-bottom: 1em;
+}
+
+
+/*-----------------D Tour--------------------*/
+
+form{
+    margin: 1em;
+}
+
 
 #sidebar {
     padding-left: 0;
@@ -703,7 +749,7 @@ li.nav-item{
 
 .div2{
     top:0;
-    background-color: #262626;
+    background-color: whitesmoke;
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
@@ -722,14 +768,17 @@ li.nav-item{
     padding:0;
 }
 
+
+
 .img-responsive3 {
-  background-color: #262626;
-  border: none;
-  text-align: center;
-  padding:0;
-  width: 25%;
-  height: 25%;
-  margin-bottom: .5em;
+  text-align: left;
+  margin: 0;
+  top:0;
+  bottom:0;
+  padding-top:0 !important;
+  padding-bottom: 0 !important;
+  width: 65%;
+  height: 65%;
   margin-right:auto;
   margin-left: auto;
 }
