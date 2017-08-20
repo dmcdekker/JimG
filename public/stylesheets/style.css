@@ -384,6 +384,37 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
+.fa.fa-mixcloud{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: .4em;
+    text-decoration: none;
+    color: #ccc;
+    padding-bottom: 1em;
+}
+
+.fa.fa-mixcloud:hover{
+    color: #ffffff;
+}
+
+.fa.fa-imdb{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: .4em;
+    text-decoration: none;
+    color: #ccc;
+    padding-bottom: 1em;
+}
+
+.fa.fa-imdb:hover{
+    color: #ffffff;
+}
+
+
 /*------------------Screen Size------------------------- */
 
 /* xs */
