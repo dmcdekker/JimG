@@ -30,10 +30,17 @@ body{
     margin-top: 2em;
     background-color: #1a1a1a;
 }
+.container-special{
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin-top: 2em;
+    background-color: #1a1a1a;
+}
 
 .row{
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 
@@ -53,10 +60,21 @@ p{
     color: #f9f9f9;
 }
 
+p1{
+    font-family: "Quicksand", sans-serif;
+    font-size: .75em;
+    color: whitesmoke;
+}
+
 em{
     font-family: "Quicksand", sans-serif;
     font-size: .75em;
     color: #f9f9f9;
+}
+em1{
+    font-family: "Quicksand", sans-serif;
+    font-size: .75em;
+    color: whitesmoke;
 }
 
 strong{
@@ -194,7 +212,83 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0px;
 }
 
+.fade-in{
+  animation: animationFrames ease 3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animationFrames ease 3s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animationFrames ease 3s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+/*  -ms-animation: animationFrames ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
 
+@keyframes animationFrames{
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    opacity:0;
+    -moz-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -o-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+/*@-ms-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -ms-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  translate(0px,0px)  ;
+  }
+} */
 
 
 
@@ -218,9 +312,61 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: .55em;
     font-family: "Quicksand", sans-serif;
+    
 }
 
+.icons{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: #262626;
+    margin-left:auto;
+    margin-right:auto;
+}
 
+.fa.fa-vimeo{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    padding: .5em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #ccc;
+    padding-bottom: 1em;
+}
+
+.fa.fa-vimeo:hover{
+    color: #ffffff;
+}
+
+.fa.fa-youtube{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: .4em;
+    text-decoration: none;
+    color: #ccc;
+    padding-bottom: 1em;
+}
+
+.fa.fa-youtube:hover{
+    color: #ffffff;
+}
+
+.fa.fa-envelope{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: .4em;
+    text-decoration: none;
+    color: #ccc;
+    padding-bottom: 1em;
+}
+
+.fa.fa-envelope:hover{
+    color: #ffffff;
+}
 
 /*------------------Screen Size------------------------- */
 
@@ -238,6 +384,9 @@ h1, h2, h3, h4, h5, h6 {
     body {
         font-size: 1.6em;
     }
+    .jumbotron-fluid2{
+      height: 50%;
+  }
 }
 
 /* lg */
@@ -248,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*-----------------Films--------------------*/
+/*-----------------Portfolio--------------------*/
 .page-header {
     margin-top: 1em;
     text-align: center;
@@ -258,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: none;
 }
 
-
+/* Unused
 .carousel-control.left,.carousel-control.right{
   background-image:none;
   
@@ -277,6 +426,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     padding: 0;
 }
+*/
 
 .modal-content{
     overflow: hidden !important;
@@ -396,10 +546,6 @@ button.top:focus{
     outline:0;
 }
 
-
-
-
-
 .close {
     float: right;
     font-size: .75em;
@@ -424,14 +570,13 @@ form{
 /*-----------------About--------------------*/
 
 .jumbotron.jumbotron-fluid2{
-    margin-top: 1em;
-    width: 100%;
-    height: 55vh;
+    margin-top: 2em;
+    width: 70%;
+    height: 60vh;
     position: inherit;
     z-index: -1;
     overflow:hidden;
     margin-bottom: 1em;
-    margin-top: 1em;
     padding:0;
     background-repeat: no-repeat;
     background-position: center right;
@@ -439,9 +584,11 @@ form{
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
     -ms-backface-visibility:     hidden;
-    border-radius: 0px;
+    
     text-align:center;
     border: 1px solid #666666;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 
@@ -494,7 +641,7 @@ iframe.large{
 }
 
 #main{
-   padding-top: 1em;
+   padding-top: .6em;
    padding-left: .1em;
 }
 
@@ -511,6 +658,7 @@ iframe.large{
   body{
       margin-top: 3em;
   }
+ 
 }
 
 
@@ -544,4 +692,45 @@ li.nav-item{
     box-shadow: 0 8px 6px -6px black;
 }
 
+
+.div1{
+    background-color: #1a1a1a;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: .5em;
+}
+
+.div2{
+    top:0;
+    background-color: #262626;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.div3{
+    background-color: #1d1d1d;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.col-lg-12{
+    padding:0;
+}
+
+.img-responsive3 {
+  background-color: #262626;
+  border: none;
+  text-align: center;
+  padding:0;
+  width: 25%;
+  height: 25%;
+  margin-bottom: .5em;
+  margin-right:auto;
+  margin-left: auto;
+}
 

@@ -9,7 +9,7 @@ html
     script(src='/bootstrap/js/bootstrap.min.js')
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/bootstrap/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/bootstrap/font-awesome/css/font-awesome.min.css')
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
     link(href='https://fonts.googleapis.com/css?family=Quicksand', rel='stylesheet')
@@ -36,10 +36,28 @@ html
     #container
       block content
     
-      block footer
-        footer
-          p#copyright © 2017 Jim Granato. All rights reserved. 
+    block footer
+      footer
+        .icons.text-center
+          a.i.fa.fa-envelope#lnkMail(href='mailto:jimgranato@gmail.com', aria-hidden='true')
+          a.i.fa.fa-vimeo(href='https://vimeo.com/jimgranato', target='_blank', aria-hidden='true')
+          a.i.fa.fa-youtube(href='https://www.youtube.com/channel/UCvpvqq2O5xd-nispSLVCK0w', target='_blank', aria-hidden='true')
+        
+          p#copyright © 2017 Jim Granato. All rights reserved
+    
+           
+          
+          
+     
+
+            
       
+          
+          
+          
+    
+    
+        
 
 
       
