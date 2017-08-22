@@ -694,8 +694,25 @@ p.lead{
 
 /*-----------------D Tour--------------------*/
 
+p.dvd{
+    font-size: .5em;
+    line-height: 105%;
+}
+
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.img-thumbnail{
+    height: 30%;
+    width: 30%;
+    margin: .3em;
+}
+
+
 form{
-    margin: 1em;
+    margin: .2em;
 }
 
 
@@ -765,8 +782,12 @@ li.nav-item{
 }
 
 .nav-pills{
-    border: 1px solid #666666;
+    border: 1px solid whitesmoke;
     box-shadow: 0 8px 6px -6px black;
+}
+
+.nav.nav-item:hover{
+    background-color: none;
 }
 
 
@@ -798,8 +819,6 @@ li.nav-item{
 .col-lg-12{
     padding:0;
 }
-
-
 
 .img-responsive3 {
   text-align: left;
