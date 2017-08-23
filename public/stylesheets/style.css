@@ -120,6 +120,7 @@ input:-webkit-autofill:active {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-weight: 100 !important;
 }
 
 
@@ -703,6 +704,20 @@ a.h4{
     letter-spacing: .05em;
     font-weight: 200 !important; 
     margin: .2em
+}
+
+.radio_intro{
+   font-family: "Quicksand", sans-serif;
+    font-size: .75em;
+    color: #f9f9f9;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    font-weight: 100; 
+    margin-top: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-bottom: 1.3em;
+   
 }
 
 /*-----------------D Tour--------------------*/

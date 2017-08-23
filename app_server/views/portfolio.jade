@@ -11,8 +11,14 @@ block content
       button.top.focus#freelance_button Freelance
       button.top.focus#radio_button Radio
       
-
-      
+      .col-lg-12
+        .radio_intro.text-left.targetDiv1
+          | In addition to being a filmmaker, Jim is also an avid music fan. His weekly internet radio show, "Wax! 
+          | Crackle! Pop!", aired on 
+          a(href='http://www.radiovalencia.fm/waxcracklepop/') Radio Valencia 
+          | in San Francisco for over two years. W!C!P! was a commercial free, free-form format that featured an eclectic mix of rock, soul, funk, country and jazz from all over the world.
+          | You can listen to more shows through the Mixcloud link at the bottom of this page.
+        
       .row
         .card-deck
           .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music1', class='targetDiv')
@@ -466,7 +472,7 @@ block content
               a(href='#gallery', data-toggle='modal', data-target='#myModal32')
                 img.img-responsive(src='./images/hot_city.jpg')
               .card-block
-                h2.card-title Hot City Boys
+                h2.card-title Hot City Boy
                 p.card-text(style='display: none')
                 span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent32')
                 #collapsecontent32.collapse
@@ -970,12 +976,6 @@ block content
       });
       });
       
-      
-      
-    
-      
- 
-      
       $(document).ready(function(){
       
       $('.targetDiv1').hide();
@@ -1011,6 +1011,7 @@ block content
       
       $('#radio_button').click(function(){
       $('.targetDiv').hide();
+      $('.targetDiv1').show();
       $('#radio1, #radio2, #radio3, #radio4, #radio5').show();
       }); 
       
