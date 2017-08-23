@@ -688,7 +688,22 @@ p.lead{
     font-size: 1.3em;
 }
 
+span.h4.text-uppercase{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4em;
+    color: #f9f9f9;
+    letter-spacing: .05em;
+    font-weight: 200 !important;
+}
 
+a.h4{
+   font-family: "Quicksand", sans-serif;
+    font-size: 1.1em;
+    color: #f9f9f9;
+    letter-spacing: .05em;
+    font-weight: 200 !important; 
+    margin: .2em
+}
 
 /*-----------------D Tour--------------------*/
 
