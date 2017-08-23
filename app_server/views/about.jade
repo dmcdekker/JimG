@@ -15,9 +15,8 @@ block content
             .col-lg-12.accordion(role='tablist', aria-multiselectable='true')
                 .card1
                     #headingOne.card-header(role='tab')
-                        h3.text-uppercase.mb-0.page-header
-                            a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-                                | About +
+                        h3.text-uppercase.mb-0.page-header.text-left
+                            a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne') About +
                     #collapseOne.collapse(role='tabpanel', aria-labelledby='headingOne')
                         .card-block
                             p.tog
@@ -45,7 +44,7 @@ block content
                                 
                 .card1
                     #headingTwo.card-header(role='tab')
-                        h3.text-uppercase.mb-0.page-header
+                        h3.text-uppercase.mb-0.page-header.text-left
                             a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
                                 | Testimonials +
                     #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo')
@@ -95,15 +94,15 @@ block content
                                 
                 .card1
                     #headingThree.card-header(role='tab')
-                        h3.text-uppercase.mb-0.page-header
+                        h3.text-uppercase.mb-0.page-header.text-left
                             a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
                                 | Press +
                     #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree')
-                        .card-block
-                            .card1
+                        .card-block.inner-accordian
+                            .card2
                                 #headingThreeA.card-header(role='tab')
-                                    h3.text-uppercase.mb-0.page-header
-                                        a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThreeA', aria-expanded='false', aria-controls='collapseThreeA')
+                                    h4.text-uppercase.mb-0.page-header.text-left
+                                        a.collapsed(data-toggle='collapse', data-parent='#inner-accordian', href='#collapseThreeA', aria-expanded='false', aria-controls='collapseThreeA')
                                             | Watch +
                                 #collapseThreeA.collapse(role='tabpanel', aria-labelledby='headingThreeA')
                                     .card-block
@@ -114,10 +113,10 @@ block content
                                         a.h4(href='https://youtu.be/2YEBvHyFjLM') This Week in Northern California November, 2009
                                         br
                                         br
-                            .card1            
+                            .card2            
                                 #headingThreeB.card-header(role='tab')
-                                    h3.text-uppercase.mb-0.page-header
-                                        a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThreeB', aria-expanded='false', aria-controls='collapseThreeB')
+                                    h4.text-uppercase.mb-0.page-header.text-left
+                                        a.collapsed(data-toggle='collapse', data-parent='#inner-accordian', href='#collapseThreeB', aria-expanded='false', aria-controls='collapseThreeB')
                                             | Listen +
                                 #collapseThreeB.collapse(role='tabpanel', aria-labelledby='headingThreeB')
                                     .card-block
@@ -126,10 +125,10 @@ block content
                                         a.h4(href='https://ww2.kqed.org/forum/2009/12/30/d-tour/') KQED FORUM January, 2010
                                         br
                                         br
-                            .card1        
+                            .card2        
                                 #headingThreeC.card-header(role='tab')
-                                    h3.text-uppercase.mb-0.page-header
-                                        a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThreeC', aria-expanded='false', aria-controls='collapseThreeC')
+                                    h4.text-uppercase.mb-0.page-header.text-left
+                                        a.collapsed(data-toggle='collapse', data-parent='#inner-accordian', href='#collapseThreeC', aria-expanded='false', aria-controls='collapseThreeC')
                                             | Read +
                                 #collapseThreeC.collapse(role='tabpanel', aria-labelledby='headingThreeC')
                                     .card-block
@@ -151,7 +150,7 @@ block content
                                         
                 .card1
                     #headingFour.card-header(role='tab')
-                        h3.text-uppercase.mb-0.page-header
+                        h3.text-uppercase.mb-0.page-header.text-left
                             a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
                                 | Work With Jim +
                     #collapseFour.collapse(role='tabpanel', aria-labelledby='headingFour')

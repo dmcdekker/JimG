@@ -465,6 +465,20 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: none;
 }
 
+.radio_intro{
+   font-family: "Quicksand", sans-serif;
+    font-size: .75em;
+    color: #f9f9f9;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    font-weight: 100; 
+    margin-top: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-bottom: 1.3em;
+   
+}
+
 /* Unused
 .carousel-control.left,.carousel-control.right{
   background-image:none;
@@ -675,7 +689,7 @@ iframe.large{
     border: 1px solid #666666;
 }
 
-.lastpar{
+.card-block.lastpar{
     margin-left: auto;
     margin-right: auto;
     margin: 3em;
@@ -685,11 +699,11 @@ p.lead{
     margin-bottom: 1em;
 }
 
-.tog{
+.card-block.tog{
     font-size: 1.3em;
 }
 
-span.h4.text-uppercase{
+.card-block.h4.text-uppercase{
     font-family: "Quicksand", sans-serif;
     font-size: 1.4em;
     color: #f9f9f9;
@@ -699,26 +713,44 @@ span.h4.text-uppercase{
 
 a.h4{
    font-family: "Quicksand", sans-serif;
+    font-size: .75em;
+    color: #f9f9f9;
+    letter-spacing: .05em;
+    font-weight: 200 !important; 
+    margin: .3em
+}
+
+a.h4:hover{
+    color: #666666;
+}
+
+a.collapsed{
+    font-family: "Quicksand", sans-serif;
     font-size: 1.1em;
     color: #f9f9f9;
     letter-spacing: .05em;
     font-weight: 200 !important; 
-    margin: .2em
+    margin: .2em;
+    padding-bottom: .2em;
+    text-decoration: none !important;
 }
 
-.radio_intro{
-   font-family: "Quicksand", sans-serif;
-    font-size: .75em;
+a{
     color: #f9f9f9;
-    line-height: 1.2;
-    letter-spacing: .1em;
-    font-weight: 100; 
-    margin-top: 1em;
-    margin-left: .5em;
-    margin-right: .5em;
-    margin-bottom: 1.3em;
-   
+    text-decoration: none !important;
 }
+
+a:focus, a:hover {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+
+.card2{
+    margin: 1em;
+}
+
+
 
 /*-----------------D Tour--------------------*/
 
