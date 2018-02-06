@@ -28,14 +28,23 @@ body{
     width: 90%;
     min-height: 100%;
     padding: 0;
-    margin-top: 2em;
+    margin-top: 3em;
     background-color: #1a1a1a;
 }
+
+.container-home{
+    width: 100%;
+    min-height: 100%;
+    padding-top: 0;
+    margin-top: 3em;
+    background-color: #1a1a1a;
+}
+
 .container-special{
     width: 100%;
     min-height: 100%;
     padding: 0;
-    margin-top: 2em;
+    margin-top: 3em;
     background-color: #1a1a1a;
 }
 
@@ -207,16 +216,16 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-
-
-
-
 /*-------------------- Home --------------------------- */
 
 .btn.btn-primary.btn-lg{
-    
-    
+
 }
+
+.col-lg-4.tumblr.iframe{
+    height: 100vh;
+}
+
 .jumbotron.jumbotron-fluid1{
     margin-top: 2em;
     margin-bottom: 2em;
@@ -764,8 +773,6 @@ a:focus, a:hover {
     margin: 1em;
 }
 
-
-
 /*-----------------D Tour--------------------*/
 
 
@@ -894,4 +901,11 @@ li.nav-item{
   margin-right:auto;
   margin-left: auto;
 }
+
+
+/*-----------------Experiment--------------------*/
+
+
+
+
 
