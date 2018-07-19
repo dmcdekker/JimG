@@ -602,13 +602,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-#collapsecontent, #collapsecontent1, #collapsecontent2, #collapsecontent3, #collapsecontent4, #collapsecontent5, 
+#collapsecontent_top1, #collapsecontent_top2, #collapsecontent_top3, #collapsecontent1, #collapsecontent2, #collapsecontent3, #collapsecontent4, #collapsecontent5, 
 #collapsecontent6, #collapsecontent7, #collapsecontent8, #collapsecontent9, #collapsecontent10, #collapsecontent11, 
 #collapsecontent12, #collapsecontent13, #collapsecontent14, #collapsecontent15, #collapsecontent16, #collapsecontent17,
 #collapsecontent18, #collapsecontent19, #collapsecontent20, #collapsecontent21, #collapsecontent22, #collapsecontent23,
 #collapsecontent24, #collapsecontent25, #collapsecontent26, #collapsecontent27, #collapsecontent28, #collapsecontent29,
 #collapsecontent30, #collapsecontent31, #collapsecontent32, #collapsecontent33, #collapsecontent34, #collapsecontent35,
-#collapsecontent36, #collapsecontent37, #collapsecontent38{
+#collapsecontent36, #collapsecontent37{
     font-family: Open Sans, sans-serif;
     font-size: small;
     margin: .7em;

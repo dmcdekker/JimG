@@ -21,46 +21,71 @@ block content
         
       .row
         .card-deck
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music1', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal1')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal_top1')
                 img.img-responsive(src='./images/love_open.png')
               .card-block
                 h2.card-title Let My Love Open the Door
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent1')
-                #collapsecontent1.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent_top1')
+                #collapsecontent_top1.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  |"The idea for this video has been circling around my brain since we finished tracking it," says Zach Rogue, of Rogue Wave. "A fantasy about what I could tell my younger self if I had the chance."
                  | Music Video promo for Rogue Wave's 2017 album, Cover Me. 
-                 | Directed, Co-Produced, Photographed, and Edited by Jim Granato. 
+                 | Directed, Co-Produced, Photographed, and Edited by Jim Granato.
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance1', class='targetDiv')
+            #gallery
+              #myModal_top1.modal.fade
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close(type='button', data-dismiss='modal')
+                        span(aria-hidden='true') CLOSE
+                    .modal-body
+                      iframe(src='https://www.youtube.com/embed/-0A4s3DLpOI', frameborder='0', allowfullscreen='', alt='let_my_love_open_the_door')
+                
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal2')
-                img.img-responsive(src='./images/oowa_lenses.png')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal_top2')
+                img.img-responsive(src='./images/IOWA_doc2.jpg')
               .card-block
-                h2.card-title Oowa Lenses
+                h2.card-title Crossing the Divide
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent2')
-                #collapsecontent2.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent_top2')
+                #collapsecontent_top2.collapse
                  br
                  h4.text-center Click Image to Play
                  br
-                 | Kickstarter campaign video for iphone 6 lens attachment.
-                 | Directed, Photographed and Edited by Jim Granato
+                 | In April, 2017, two dozen Iowans walked 85 miles from Indigenous Iowa's Little Creek Camp to Des Moines for the April 29 
+                 | Climate Justice Rally. Along the way they are met by strong opposing views from locals (and fellow neighbors) who received 
+                 | bad misinformation or "fake news" about the group's intentions.
+                 | This short documentary chronicles how two groups on either side of the political divide get caught up in a firestorm of disrespect, 
+                 | sparked by a Confederate flag and an attack video funded by a pipeline company.
                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary1', class='targetDiv')
+          #myModal_top2.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/K9OX06bmclg', frameborder='0', allowfullscreen='', alt='crossing_the_divide')  
+          
+              
+          
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal3')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal_top3')
                 img.img-responsive(src='./images/dtour.jpg')
               .card-block
                 h2.card-title D Tour
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent3')
-                #collapsecontent3.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent_top3')
+                #collapsecontent_top3.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -70,78 +95,155 @@ block content
                   | community, a special group whose lives become entwined in life and death. On one side are those who are saved through tragedy or by an incredible gift 
                   | from a living donor; on the other are the families of the donors, who are offered a chance for hope and bittersweet resolution for their loss. 
                   | D TOUR is filled with unexpected twists and the joys and sorrows of life. 
-                  | Produced, Directed, Photographed, and Edited by Jim Granato    
-       
-                 
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance2', class='targetDiv')
+                  | Produced, Directed, Photographed, and Edited by Jim Granato
+                  
+           #myModal_top3.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/150440687', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='d_tour')
+    
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal4')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal37')
+                img.img-responsive(src='./images/oowa_lenses.png')
+              .card-block
+                h2.card-title Oowa Lenses
+                p.card-text(style='display: none')
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent37')
+                #collapsecontent37.collapse
+                 br
+                 h4.text-center Click Image to Play
+                 br
+                 | Kickstarter campaign video for iphone 6 lens attachment.
+                 | Directed, Photographed and Edited by Jim Granato
+            
+            #myModal37.modal.fade
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal')
+                      span(aria-hidden='true') CLOSE      
+                  .modal-body
+                    iframe(src='https://player.vimeo.com/video/168104807', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='oowa')  
+                     
+          
+        
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
+            .card
+              a(href='#gallery', data-toggle='modal', data-target='#myModal36')
                 img.img-responsive(src='./images/glowing_portrait.jpeg')
               .card-block
                 h2.card-title The Glowing Portrait
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent4')
-                #collapsecontent4.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent36')
+                #collapsecontent36.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Four hour pastel pencil instructional video for artist Cuong Nguyen.
-                 | Directed, Photographed, and Edited by Jim Granato. 
+                 | Directed, Photographed, and Edited by Jim Granato.
+                 
+          #myModal36.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/_vKdawO9O0U', frameborder='0', allowfullscreen='', alt='glowing_portrait')  
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance3', class='targetDiv')
+          
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal5')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal35')
                 img.img-responsive(src='./images/breathe.jpg')
               .card-block
                 h2.card-title The Campaign to Breathe Free
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent5')
-                #collapsecontent5.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent35')
+                #collapsecontent35.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Short campaign video for Breathe California, a Bay Area non-profit organization that fights lung disease, advocates for clean air and advances public health through education and services.
                  | Directed, Photographed, and Edited by Jim Granato.
-          
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance4', class='targetDiv')
+                 
+          #myModal35.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/yGBDutELze4', frameborder='0', allowfullscreen='', alt='breathe')
+           
+            
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal6')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal34')
                 img.img-responsive(src='./images/adobe_spark.jpg')
               .card-block
                 h2.card-title Adobe Spark Aina Story
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent6')
-                #collapsecontent6.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent34')
+                #collapsecontent34.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Promo video for Adobe Spark.
-                 | Co-Videography by Jim Granato.  
+                 | Co-Videography by Jim Granato.
+                 
+          #myModal34.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE     
+                .modal-body        
+                  iframe(src='https://player.vimeo.com/video/176203438', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='adobe_spark') 
+                      
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance5', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal7')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal33')
                 img.img-responsive(src='./images/usf_maps.png')
               .card-block
                 h2.card-title USF Maps
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent7')
-                #collapsecontent7.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent33')
+                #collapsecontent33.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Recruitment video for the University of San Francisco's Masters program in Asian Pacific Studies.
                  | Directed, Photographed, and Edited by Jim Granato.
                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance6', class='targetDiv')
+          #myModal33.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE     
+                .modal-body 
+                  iframe(src='https://player.vimeo.com/video/170989280', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='usf_maps')
+              
+                 
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal8')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal32')
                 img.img-responsive(src='./images/science_sharing.jpg')
               .card-block
                 h2.card-title Science of Sharing
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent8')
-                #collapsecontent8.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent32')
+                #collapsecontent32.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -150,32 +252,51 @@ block content
                  | An unexpected event occurs in the face of a co-worker. Do you bring it up or let it hang? Many critical challenges we all face—issues like 
                  | energy crises, international conflict, ecosystem collapse, and climate change—revolve around social perceptions, expectations, and interactions. 
                  | Directed, Written, Co-Produced, Photographed, and Edited by Jim Granato.
+            
+            #myModal32.modal.fade
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal')
+                      span(aria-hidden='true') CLOSE      
+                  .modal-body
+                    iframe(src='https://www.youtube.com/embed/FPg7BHZcae8', frameborder='0', allowfullscreen='', alt='science_of_sharing') 
+                  
          
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance7', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal9')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal31')
                 img.img-responsive(src='./images/exploralab.jpg')
               .card-block
                 h2.card-title Introducing Exploralab
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent9')
-                #collapsecontent9.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent31')
+                #collapsecontent31.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Trailer for fun and interactive science book for kids, designed by The Exploratorium. 
                  | Directed, Written, Co-Produced, Photographed, and Edited by Jim Granato.
                  
+          #myModal31.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body 
+                  iframe(src='https://www.youtube.com/embed/8aM_5S2tydw', frameborder='0', allowfullscreen='', alt='exploralab') 
+               
                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music2', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal10')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal30')
                 img.img-responsive(src='./images/happy_carrot.jpg')
               .card-block
                 h2.card-title Happy Carrot Health Food Store
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent10')
-                #collapsecontent10.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent30')
+                #collapsecontent30.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -184,16 +305,26 @@ block content
                  | literal take on the song as Sonny attempts to shop for vegetables, dietary supplements and sunglasses. The song and video take a psychedelic turn near the end, 
                  | courtesy animator Teppi Ando. It's worth your seven minutes and you can watch it below. - Brooklyn Vegan 
                  | Directed, Co-Produced, Photographed, and Edited by Jim Granato.
+                 
+          #myModal30.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE     
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/fQZ2CsxVO20', frameborder='0', allowfullscreen='', alt='happy_carrot') 
+        
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary2', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal11')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal29')
                 img.img-responsive(src='./images/vivid_dreams.png')
               .card-block
                 h2.card-title Vivid Dreams
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent11')
-                #collapsecontent11.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent29')
+                #collapsecontent29.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -201,18 +332,27 @@ block content
                   | she is 'psychevac'd' back to the states and admitted to Georgetown Hospital mental ward. The drug required by the Peace Corps 
                   | to be taken as a protection against malaria is said to cause only vivid dreams, but no one mentions the other side effects of psychotic 
                   | tendencies, including suicide and murder.
-                  | Produced, Directed, Photographed, and Edited by Jim Granato    
+                  | Produced, Directed, Photographed, and Edited by Jim Granato
                   
-          
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary3', class='targetDiv')
+          #myModal29.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/7784816', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='vivid_dreams')
+                
+        
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal12')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal28')
                 img.img-responsive(src='./images/making_bell.png')
               .card-block
                 h2.card-title The Making of a Bell
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent12')
-                #collapsecontent12.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent28')
+                #collapsecontent28.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -220,34 +360,52 @@ block content
                  | Artist Nick Diphillipo has been designing and casting bells and other objects for over thirty years. He teaches bell making at The 
                  | Crucible in Oakland, California, as well as other foundry-related subjects.
                  | Directed, Co-produced, Photographed, and Edited by Jim Granato.
+                 
           
-        
+          #myModal28.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/209813517', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='making_bell')
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film1', class='targetDiv')
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal13')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal27')
                 img.img-responsive(src='./images/slug.jpg')
               .card-block
                 h2.card-title Slug War
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent13')
-                #collapsecontent13.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent27')
+                #collapsecontent27.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Army soldiers, on a mission to protect a satellite dish, are caught up in a battle with an unexpected visitor. Meanwhile, filmmaker Jim Granato collaborates with his son, Alex Rey (age 4), competing with his unstoppable energy and spontaneous creativity.
                  | Photographed, Edited, Written, and Directed by Jim Granato.
-                 
+          
+          #myModal27.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body  
+                  iframe(src='https://www.youtube.com/embed/HTO55LIzky8', frameborder='0', allowfullscreen='', alt='slug_war')
+          
             
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film2', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal14')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal26')
                 img.img-responsive(src='./images/angels.png')
               .card-block
                 h2.card-title Angels
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent14')
-                #collapsecontent14.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent26')
+                #collapsecontent26.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -256,15 +414,27 @@ block content
                  | seeking shelter. The movies are just around the corner! But, in our hero's case, he's on their corner. 
                  | Photographed, Edited, Written, and Directed by Jim Granato.
                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary4', class='targetDiv')
+          #myModal26.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body  
+                  iframe(src='https://player.vimeo.com/video/63921781', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='angels')
+        
+          
+      
+                 
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal15')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal25')
                 img.img-responsive(src='./images/altamont.png')
               .card-block
                 h2.card-title Altamont Wind Farm
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent15')
-                #collapsecontent15.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent25')
+                #collapsecontent25.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -272,17 +442,29 @@ block content
                  | Altamont Pass. Mounted both in rows and individually, machines with large propellers catch the wind, turning round and round at 
                  | different speeds. Learn how wind energy is generated and stored for use in this most peculiar area, and its impact on living things 
                  | both near and far.
-                 | Directed, Co-produced, Photographed, and Edited by Jim Granato.   
-      
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary5', class='targetDiv')
+                 | Directed, Co-produced, Photographed, and Edited by Jim Granato. 
+          
+          #myModal25.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/209996164', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='altamont')
+                 
+                 
+          
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal16')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal24')
                 img.img-responsive(src='./images/electric_guitar.png')
               .card-block
                 h2.card-title Electric Guitar
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent16')
-                #collapsecontent16.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent24')
+                #collapsecontent24.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -291,16 +473,28 @@ block content
                  | shred away some mysteries of this beloved instrument. Join us as we get down to the dynamics, parts, styles, and timbre that 
                  | buzz within in a body full of signals, magnets, and wires.
                  | Directed, Produced, Photographed, and Edited by Jim Granato.
+                 
+          #myModal24.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/210005326', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='electric_guitar')
+                  
+            
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary6', class='targetDiv')
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal17')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal23')
                 img.img-responsive(src='./images/humans_mars.png')
               .card-block
                 h2.card-title Sending Humans To Mars
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent17')
-                #collapsecontent17.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent23')
+                #collapsecontent23.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -308,18 +502,30 @@ block content
                  | we explore the Mars One project, which is planning human settlement on the red planet, and hear from scientists at 
                  | NASA's Ames Research Center about adjusting to the Martian environment. We also meet the brave Bay Area residents who 
                  | are hoping to make this journey.
-                 | Directed, Produced, Photographed, and Edited by Jim Granato       
+                 | Directed, Produced, Photographed, and Edited by Jim Granato 
           
+          #myModal23.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body 
+                  iframe(src='https://player.vimeo.com/video/209838072', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='humans_mars')
+                
+                      
+                 
+           
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary7', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal18')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal22')
                 img.img-responsive(src='./images/wildlife.jpg')
               .card-block
                 h2.card-title Living With Wildlife
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent18')
-                #collapsecontent18.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent22')
+                #collapsecontent22.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -327,31 +533,52 @@ block content
                  | for all involved. Based on biological studies and direct experiences, we focus on a few of our favorite neighboring species who interact with us humans, 
                  | and our way of life, in more ways than you may think. 
                  | Directed, Produced, Photographed, and Edited by Jim Granato.
+            
+          #myModal22.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body  
+                  iframe(src='https://player.vimeo.com/video/209824627', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='wildlife')
+    
+                 
           
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='documentary8', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv documentary')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal19')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal21')
                 img.img-responsive(src='./images/urban_astronomy.jpg')
               .card-block
                 h2.card-title Urban Astronomy
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent19')
-                #collapsecontent19.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent21')
+                #collapsecontent21.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Cities are known to produce a lot of light pollution, making it a challenge for astronomy enthusiasts to view the heavens 
                  | within city limits. For us in the SF Bay Area, these issues apply, however, exciting results can still be attained between 
                  | sky gazing and learning about how we all fit into this big thing we call "space".
-                 | Directed, Produced, Photographed, and Edited by Jim Granato..       
-                 
+                 | Directed, Produced, Photographed, and Edited by Jim Granato.
           
-          
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance8', class='targetDiv')
+          #myModal21.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE      
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/209833412', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='urban_astronomy')
+              
+            
+           
+           
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
               a(href='#gallery', data-toggle='modal', data-target='#myModal20')
-                img.img-responsive(src='./images/carl_davis.jpg')
+                img.img-responsive(src='./images/Carl_Davis.jpg' style='height:8.8em;')
               .card-block
                 h2.card-title Carl Davis at the Paramount Theater
                 p.card-text(style='display: none')
@@ -363,64 +590,107 @@ block content
                  | One of three promo videos for the San Francisco Silent Film Festival featuring legendary composer Carl Davis visiting the 
                  | Paramount Theatre in Oakland, CA for the first time. Carl Davis would go on to create a site specific live score for a rare 
                  | screening of Abel Gance's legendary epic NAPOLEON.
-                 | Directed, Photographed, and Edited by Jim Granato.          
+                 | Directed, Photographed, and Edited by Jim Granato. 
+          
+          #myModal20.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/SM5Ru8_9RUA', frameborder='0', allowfullscreen='', alt='carl_davis')
         
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music3', class='targetDiv')
+                   
+        
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal21')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal19')
                 img.img-responsive(src='./images/at_the_beginning.png')
               .card-block
                 h2.card-title At the Beginning of the End
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent21')
-                #collapsecontent21.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent19')
+                #collapsecontent19.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Ramon & Jessica's "Empire" riffs on themes of post-apocalyptic society, DIY culture, and political stagnation. Released just 
                  | days before the 2012 election, "Empire" is timed to comment on the current election hype, while reflecting on the turmoils of 
                  | the past four years: climate change, Occupy Wall Street, economic uncertainty, and amidst all this, the continuation of everyday life by everyday people.
-                 | Directed, Co-Produced, Photographed, and Edited by Jim Granato. 
+                 | Directed, Co-Produced, Photographed, and Edited by Jim Granato.
+                 
+          #myModal19.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/52560200', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='at_the_beginning')
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance9', class='targetDiv')
+          
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal22')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal18')
                 img.img-responsive(src='./images/jack_white.jpg')
               .card-block
                 h2.card-title Jack White PopUp Performance
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent22')
-                #collapsecontent22.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent18')
+                #collapsecontent18.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | Last minute shoot of famed rocker Jack White performing, with his band, in the middle of the woods in Golden Gate Park during Outside Lands in San Francisco.
                  | Produced and Edited by Jim Granato.
                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music4', class='targetDiv')
+          #myModal18.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/63226418', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='jack_white')
+               
+                 
+                 
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal23')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal17')
                 img.img-responsive(src='./images/march_kodachrome.jpg')
               .card-block
                 h2.card-title March of the Kodachrome Soldier
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent23')
-                #collapsecontent23.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent17')
+                #collapsecontent17.collapse
                  br
                  h4.text-center Click Image to Play
                  br
                  | An in-camera edit and then hand-processed super 8 "one-reeler" of Lucio (Rev. Screaming Fingers) & Pat (Phantom Drummer) playing near the railroad tracks. Don't try this at home. "March of the Kodachrome Soldier" by Reverend Screaming Fingers. 2011
-                 | Directed, Produced, Photographed, and Edited by Jim Granato.   
-                 
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music5', class='targetDiv')
+                 | Directed, Produced, Photographed, and Edited by Jim Granato.
+          
+          #myModal17.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/34414871', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='march_kodachrome')
+                   
+           
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal24')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal16')
                 img.img-responsive(src='./images/pancho_san.png')
               .card-block
                 h2.card-title Kick the Fences Down
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent24')
-                #collapsecontent24.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent16')
+                #collapsecontent16.collapse
                  br
                  h4.text-center Click Image to Play
                  br
@@ -428,48 +698,83 @@ block content
                  | landscape where the horses must run free. This is the debut music video from the SF Bay Area's Pancho-san
                  | . "Kick The Fences Down" is available on their self-released, "Oh, Mellow Melody..."
                  | Produced and Edited by Jim Granato.  
+          
+          #myModal16.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/28651441', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='pancho-san')
+                        
                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film3', class='targetDiv')
+          
+                 
+                 
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal25')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal15')
                 img.img-responsive(src='./images/west_is_sf.png')
               .card-block
                 h2.card-title West Is San Francisco
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent25')
-                #collapsecontent25.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent15')
+                #collapsecontent15.collapse
                   br
                   h4.text-center Click Image to Play
                   br
                   | A film collaboration (32 min) between six San Francisco filmmakers.  A frenetic fusion of night and day, movement and stasis, 
                   | work and play - an iconographic city rides the flux of boom and bust in the 21st century. 
                   | Co-Directed, Produced, Edited and photographed by Jim Granato
-                  
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film4', class='targetDiv')
+          
+          #myModal15.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/32331105', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='west_is_sf')  
+             
+                    
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal26')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal14')
                 img.img-responsive(src='./images/so_long.jpeg')
               .card-block
                 h2.card-title So Long, Kodachrome
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent26')
-                #collapsecontent26.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent14')
+                #collapsecontent14.collapse
                   br
                   h4.text-center Click Image to Play
                   br
                   | A deal goes down in a shady motel room where our (anti-)hero gets more than he bargains for. 
                   | "So Long, Kodachrome" is an ode to super 8 and the beloved, now defunct, popular color film stock while paying homage to a famous 70’s American landmark film.
-                  | Photographed, Edited, Written and Directed by Jim Granato    
+                  | Photographed, Edited, Written and Directed by Jim Granato
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance10', class='targetDiv')
+          #myModal14.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/146865203', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='so_long')
+          
+                  
+                    
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal27')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal13')
                 img.img-responsive(src='./images/inhabitant.jpeg')
               .card-block
                 h2.card-title SFMOMA Presents Inhabitant
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent27')
-                #collapsecontent27.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent13')
+                #collapsecontent13.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -481,17 +786,28 @@ block content
 
                   | This live art event was commissioned and presented by San Francisco Museum of Modern Art
                   | Lead Videography by Jim Granato
-                  
+          
+          #myModal13.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/91564037', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='inhabitant')
+                
+                             
+          
                     
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film5', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal28')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal12')
                 img.img-responsive(src='./images/dream.jpeg')
               .card-block
                 h2.card-title Afternoon Dream
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent28')
-                #collapsecontent28.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent12')
+                #collapsecontent12.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -499,16 +815,27 @@ block content
                   | (later hand-processed), "Afternoon Dream" comes from a series of films which take on solitude, landscapes, and the passing of time with more 
                   | of an experimental and minimalist approach.
                   | Photographed, Edited and Directed by Jim Granato
+          
+          #myModal12.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/7842372', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='afternoon_dream')
+                 
                   
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film6', class='targetDiv')
+                  
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal29')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal11')
                 img.img-responsive(src='./images/designated_routes.jpeg')
               .card-block
                 h2.card-title Designated Routes
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent29')
-                #collapsecontent29.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent11')
+                #collapsecontent11.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -517,33 +844,55 @@ block content
                   | only a shadow knows its destination. Low level clouds help the earth cool. After an orbit has been complete the city from which we've leaped lies 
                   | awake waiting for our return.
                   | Live Music Score by Destiny Muhammed.
-                  | Photographed, Edited, and Directed by Jim Granato        
+                  | Photographed, Edited, and Directed by Jim Granato
+                  
+          #myModal11.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://player.vimeo.com/video/7789499', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='designated_routes')
+               
+                  
+           
           
-          
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='freelance11', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv freelance')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal30')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal10')
                 img.img-responsive(src='./images/dunlop.jpeg')
               .card-block
                 h2.card-title Dunlop Strings
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent30')
-                #collapsecontent30.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent10')
+                #collapsecontent10.collapse
                   br
                   h4.text-center Click Image to Play
                   br
                   | Promo video for high end guitar strings for Jim Dunlop Guitar Products.  
                   | Photography by Jim Granato 
                   
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film9', class='targetDiv')
+          #myModal10.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/DunjuRJ6Gb0', frameborder='0', allowfullscreen='', alt='dunlop')  
+                        
+          
+                  
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal31')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal9')
                 img.img-responsive(src='./images/human_skins.png')
               .card-block
                 h2.card-title Human Skins
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent31')
-                #collapsecontent31.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent9')
+                #collapsecontent9.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -557,15 +906,25 @@ block content
                   | on the know that "this is not any ordinary story".
                   | Co-Produced, Written, Edited, and Directed by Jim Granato
                   
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music6', class='targetDiv')
+          #myModal9.modal.fade
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type='button', data-dismiss='modal')
+                      span(aria-hidden='true') CLOSE
+                  .modal-body
+                    iframe(src='https://player.vimeo.com/video/7842838', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='human_skins')
+                    
+                  
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal32')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal8')
                 img.img-responsive(src='./images/carbon.jpg')
               .card-block
                 h2.card-title Carbon Copies
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent32')
-                #collapsecontent32.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent8')
+                #collapsecontent8.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -573,17 +932,28 @@ block content
                   | One astronaut threatens to break the mold and ventures solo to the primitive planet looking for something more. Featuring the 
                   | music of Brando, taken from the Luna Music/recordhead release "Single Crown Postcard".
                   | **WINNER, BEST MUSIC VIDEO, 2002 DOWNSTREAM FILM FESTIVAL** 
-                  | Directed, Produced, Photographed, and Edited by Jim Granato 
+                  | Directed, Produced, Photographed, and Edited by Jim Granato
+          
+          #myModal8.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body  
+                  iframe(src='https://player.vimeo.com/video/7911723', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='carbon_copies')
+          
+            
                   
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='music7', class='targetDiv')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv music')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal33')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal7')
                 img.img-responsive(src='./images/hot_city.jpg')
               .card-block
                 h2.card-title Hot City Boy
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent33')
-                #collapsecontent33.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent7')
+                #collapsecontent7.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -591,15 +961,26 @@ block content
                   | Francisco armed with a case of beer, a 1969 Plymouth Roadrunner and a super 8 camera. 
                   | Directed, Co-Produced, Photographed, and Edited by Jim Granato
                   
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='film10', class='targetDiv')
+          #myModal7.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(src='https://www.youtube.com/embed/ozThnDhiGmw', frameborder='0', allowfullscreen='', alt='hot_city') 
+          
+          
+                  
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv film')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal34')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal6')
                 img.img-responsive(src='./images/picnic.jpg')
               .card-block
                 h2.card-title The Picnic
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent34')
-                #collapsecontent34.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent6')
+                #collapsecontent6.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -607,16 +988,26 @@ block content
                   | A look at food, wine and the complexity of the moment.
                   | Photographed, Edited, and Directed by Jim Granato
           
+          #myModal6.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body 
+                  iframe(src='https://player.vimeo.com/video/7875292', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='the_picnic')
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio3', class='targetDiv1')
+          
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv1 radio')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal35')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal5')
                 img.img-responsive(src='./images/richman.jpeg')
               .card-block
                 h2.card-title W!C!P! #15
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent35')
-                #collapsecontent35.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent5')
+                #collapsecontent5.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -624,17 +1015,27 @@ block content
                   | Underground. Lou would have turned 72 on March 2nd, 2014. It’s well known that the Velvets were a huge influence on Jonathan 
                   | and The Modern Lovers. Celebrate Lou Reed’s Birthday with music, stories & observations from the one & only Jonathan Richman!
                   | Originally recorded for Radio Valencia broadcast March 2, 2014.
-                          
+                  
+          #myModal5.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body 
+                  iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-show-15-jonathan-richman-celebrates-lou-reeds-birthday%2F&light=1', frameborder='0')
+                  
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio4', class='targetDiv1')
+                            
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv1 radio')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal36')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal4')
                 img.img-responsive(src='./images/watt.jpeg')
               .card-block
                 h2.card-title W!C!P! #37
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent36')
-                #collapsecontent36.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent4')
+                #collapsecontent4.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -645,16 +1046,28 @@ block content
                   | and his latest project, with fellow musicians Stefano Pilia and Andrea Belfi, the more experimental post-rock power trio Il Sogno 
                   | Del Marinaio.
                   | Originally recorded for Radio Valencia broadcast August 31, 2014.
+                  
+          #myModal4.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body 
+                  iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-show-37-dreamin-spielin-with-mike-watt%2F&light=1', frameborder='0')
+  
+            
+                  
                           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio2', class='targetDiv1')
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv1 radio')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal37')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal3')
                 img.img-responsive(src='./images/pam.jpeg')
               .card-block
                 h2.card-title W!C!P! #57
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent37')
-                #collapsecontent37.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent3')
+                #collapsecontent3.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -662,18 +1075,28 @@ block content
                   | From the street-wise soul classic sounds of Joe Bataan and Sugar Pie DeSanto to the overlooked rocking combo madness of Dakíla 
                   | (the “Filipino Santana”), to the even more overlooked sub-SUB genres of “cruise rock” and the Manila sound! Tune in.
                   | Originally broadcasted live on Radio Valencia March 1, 2015
-                  
           
+          #myModal3.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body
+                  iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-57-pam-torno-and-her-filipino-afro-soul%2F&light=1', frameborder='0')
+  
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio1', class='targetDiv1')
+            
+          
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv1 radio')
             .card
-              a(href='#gallery', data-toggle='modal', data-target='#myModal38')
+              a(href='#gallery', data-toggle='modal', data-target='#myModal2')
                 img.img-responsive(src='./images/alison_gil.jpeg')
               .card-block
                 h2.card-title W!C!P! #62
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent38')
-                #collapsecontent38.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent2')
+                #collapsecontent2.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -683,15 +1106,26 @@ block content
                   | share stories and connect the dots musically with just some of the artists that make up this rich family tree Gil, Alison and Scott are a part of.
                   | Originally recorded live for Radio Valencia on April 19, 2015. Gil Ray passed away on January 24, 2017 of complications from cancer.
           
-          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(id='radio2', class='targetDiv1')
+           #myModal2.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body 
+                  iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-62-gil-ray-and-alison-levy-get-loud-remembers-scott-miller%2F&light=1', frameborder='0')
+    
+           
+            
+          .col-xl-3.col-lg-4.col-sm-6.col-xs-12(class='targetDiv1 radio')
             .card
               a(href='#gallery', data-toggle='modal', data-target='#myModal39')
                 img.img-responsive(src='./images/mummies.jpeg')
               .card-block
                 h2.card-title W!C!P! #69
                 p.card-text(style='display: none')
-                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent39')
-                #collapsecontent39.collapse
+                span.glyphicon.glyphicon-chevron-down(data-toggle='collapse', href='#collapsecontent1')
+                #collapsecontent1.collapse
                   br
                   h4.text-center Click Image to Play
                   br
@@ -703,404 +1137,25 @@ block content
                   | From humble beginnings that quickly blew up ending the 80’s with an insane sonic blast and charging into the new decade, leading a 
                   | dedicated underground following that kicked off the 90’s revival garage punk rock movement worldwide.
                   | Recorded live June 28, 2015 for Radio Valencia broadcast
+                  
+          #myModal1.modal.fade
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') CLOSE
+                .modal-body 
+                  iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-69-mummies-maz-russell-sits-and-spins%2F&light=1', frameborder='0')
 
-                     
-      #gallery
-        #myModal1.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/-0A4s3DLpOI', frameborder='0', allowfullscreen='', alt='let_my_love_open_the_door')
-                
-        #myModal2.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/168104807', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='oowa')  
-            
-        #myModal3.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/150440687', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='d_tour')
-        
-        
-        
-        #myModal4.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/_vKdawO9O0U', frameborder='0', allowfullscreen='', alt='glowing_portrait')  
-        
-        #myModal5.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/yGBDutELze4', frameborder='0', allowfullscreen='', alt='breathe')
-                
-        #myModal6.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE     
-              .modal-body        
-                iframe(src='https://player.vimeo.com/video/176203438', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='adobe_spark') 
-                    
-        #myModal7.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE     
-              .modal-body 
-                iframe(src='https://player.vimeo.com/video/170989280', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='usf_maps')
-            
-        
-        #myModal8.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/FPg7BHZcae8', frameborder='0', allowfullscreen='', alt='science_of_sharing') 
-              
-        
-        #myModal9.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body 
-                iframe(src='https://www.youtube.com/embed/8aM_5S2tydw', frameborder='0', allowfullscreen='', alt='exploralab') 
-                
-        #myModal10.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE     
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/fQZ2CsxVO20', frameborder='0', allowfullscreen='', alt='happy_carrot') 
-        
-        
-        #myModal11.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/7784816', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='vivid_dreams')
-              
-        
-        #myModal12.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/209813517', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='making_bell')
-        
-
-        #myModal13.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body  
-                iframe(src='https://www.youtube.com/embed/HTO55LIzky8', frameborder='0', allowfullscreen='', alt='slug_war')
-        
-       
-        #myModal14.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body  
-                iframe(src='https://player.vimeo.com/video/63921781', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='angels')
-        
-        
-        #myModal15.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/209996164', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='altamont')
-        
-        
-        #myModal16.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/210005326', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='electric_guitar')
-                
-        
-        #myModal17.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body 
-                iframe(src='https://player.vimeo.com/video/209838072', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='humans_mars')
-              
-        
-        #myModal18.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body  
-                iframe(src='https://player.vimeo.com/video/209824627', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='wildlife')
-  
-        
-        #myModal19.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE      
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/209833412', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='urban_astronomy')
-                
-              
-        #myModal20.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/SM5Ru8_9RUA', frameborder='0', allowfullscreen='', alt='carl_davis')
-        
-        #myModal21.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/52560200', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='at_the_beginning')
-        
-        #myModal22.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/63226418', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='jack_white')
-        
-        #myModal23.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/34414871', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='march_kodachrome')
           
-        #myModal24.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/28651441', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='pancho-san')
-              
-        #myModal25.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/32331105', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='west_is_sf')  
-        
-        #myModal26.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/146865203', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='so_long')
-        
-        #myModal27.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/91564037', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='so_long')
-              
-              
-        #myModal28.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/7842372', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='afternoon_dream')
-              
-        #myModal29.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/7789499', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='designated_routes')
-              
-        
-        #myModal30.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/DunjuRJ6Gb0', frameborder='0', allowfullscreen='', alt='dunlop')  
-              
-        
-        #myModal31.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://player.vimeo.com/video/7842838', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='human_skins')
-                
-        
-        #myModal32.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body  
-                iframe(src='https://player.vimeo.com/video/7911723', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='carbon_copies')
-        
-        #myModal33.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(src='https://www.youtube.com/embed/ozThnDhiGmw', frameborder='0', allowfullscreen='', alt='hot_city') 
-        
-         #myModal34.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body 
-                iframe(src='https://player.vimeo.com/video/7875292', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='', alt='the_picnic')
-        
-        #myModal35.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body 
-                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-show-15-jonathan-richman-celebrates-lou-reeds-birthday%2F&light=1', frameborder='0')
-
-        
-        #myModal36.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body 
-                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-show-37-dreamin-spielin-with-mike-watt%2F&light=1', frameborder='0')
-
-        
-        #myModal37.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body
-                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-57-pam-torno-and-her-filipino-afro-soul%2F&light=1', frameborder='0')
-
-        
-        
-        #myModal38.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body 
-                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-62-gil-ray-and-alison-levy-get-loud-remembers-scott-miller%2F&light=1', frameborder='0')
-        
-        #myModal39.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body 
-                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-69-mummies-maz-russell-sits-and-spins%2F&light=1', frameborder='0')
-        
-        
-        
-       
-
-        #myModal40.modal.fade
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button', data-dismiss='modal')
-                  span(aria-hidden='true') CLOSE
-              .modal-body 
-                iframe(width='100%', height='400', src='https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fwax_crackle_pop%2Fwax-crackle-pop-show-37-dreamin-spielin-with-mike-watt%2F&light=1', frameborder='0')
-
-
-        
+         
         
         
         
     script(type='text/javascript').
     
       $(function(){
-      $('#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8, #myModal9, #myModal10, #myModal11, #myModal12, #myModal13, #myModal14, #myModal15, #myModal16, #myModal17, #myModal18, #myModal19, #myModal20, #myModal21, #myModal22, #myModal23, #myModal24, #myModal25, #myModal26, #myModal27, #myModal28, #myModal29, #myModal30, #myModal31, #myModal32, #myModal33, #myModal34, #myModal35, #myModal36, #myModal37, #myModal39, #myModal40').on('hidden.bs.modal', function (e) {
+      $('#myModal_top1, #myModal_top2, #myModal_top3, #myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8, #myModal9, #myModal10, #myModal11, #myModal12, #myModal13, #myModal14, #myModal15, #myModal16, #myModal17, #myModal18, #myModal19, #myModal20, #myModal21, #myModal22, #myModal23, #myModal24, #myModal25, #myModal26, #myModal27, #myModal28, #myModal29, #myModal30, #myModal31, #myModal32, #myModal33, #myModal34, #myModal35, #myModal36, #myModal37').on('hidden.bs.modal', function (e) {
       $iframe = $(this).find("iframe");
       $iframe.attr("src", $iframe.attr("src"));
       });
@@ -1116,8 +1171,6 @@ block content
       
       $(document).ready(function(){
       
-      $('.targetDiv1').hide();
-      
       $('#showall').click(function(){
       $('.targetDiv').show();
       $('.targetDiv1').hide()
@@ -1126,34 +1179,34 @@ block content
       $('#films_button').click(function(){
       $('.targetDiv').hide();
       $('.targetDiv1').hide()
-      $('#film1, #film2, #film3, #film4, #film5, #film6, #film7, #film8, #film8, #film9, #film10').show();
+      $('.film').show();
       });
       
       $('#documentary_button').click(function(){
       $('.targetDiv').hide();
       $('.targetDiv1').hide()
-      $('#documentary1, #documentary2, #documentary3, #documentary4, #documentary5, #documentary6, #documentary7, #documentary8').show();
+      $('.documentary').show();
       }); 
       
       $('#music_video_button').click(function(){
       $('.targetDiv').hide();
       $('.targetDiv1').hide()
-      $('#music1, #music2, #music3, #music4, #music5, #music6, #music7').show();
+      $('.music').show();
       }); 
       
       $('#freelance_button').click(function(){
       $('.targetDiv').hide();
       $('.targetDiv1').hide()
-      $('#freelance1, #freelance2, #freelance3, #freelance4, #freelance5, #freelance6, #freelance7, #freelance8, #freelance9, #freelance10, #freelance11').show();
+      $('.freelance').show();
       }); 
       
       $('#radio_button').click(function(){
       $('.targetDiv').hide();
       $('.targetDiv1').show();
-      $('#radio1, #radio2, #radio3, #radio4, #radio5').show();
+      $('.radio').show();
       }); 
       
-      
+      $('.targetDiv1').hide();
       
       // $('.card').clicked(function(){
       // var origFocus = document.activeElement;
